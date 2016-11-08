@@ -203,7 +203,10 @@ namespace pxsim.ImageMethods {
                 off += stride;
                 return true;
             },
-            whenDone: cb
+            whenDone: function (cancelled: boolean) {
+                this.cancelled = cancelled;
+                return cb();
+            }
         })
     }
 }
