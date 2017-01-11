@@ -591,7 +591,11 @@ namespace pxsim.visuals {
             svg.child(glow, "feGaussianBlur", { stdDeviation: "5", result: "glow" });
             let merge = svg.child(glow, "feMerge", {});
             for (let i = 0; i < 3; ++i) svg.child(merge, "feMergeNode", { in: "glow" })
-
+            let ledglow = svg.child(this.defs, "filter", { id: "ledglow", x: "-50%", y: "-20%", width: "200%", height: "140%" });
+            svg.child(ledglow, "feGaussianBlur", { stdDeviation: "4", result: "glow" });
+            let ledmerge = svg.child(ledglow, "feMerge", {});
+            for (let i = 0; i < 3; ++i) svg.child(ledmerge, "feMergeNode", { in: "glow" })
+            
             // outline
             svg.path(this.g, "sim-board", "M498,31.9C498,14.3,483.7,0,466.1,0H31.9C14.3,0,0,14.3,0,31.9v342.2C0,391.7,14.3,406,31.9,406h434.2c17.6,0,31.9-14.3,31.9-31.9V31.9z M14.3,206.7c-2.7,0-4.8-2.2-4.8-4.8c0-2.7,2.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C19.2,204.6,17,206.7,14.3,206.7z M486.2,206.7c-2.7,0-4.8-2.2-4.8-4.8c0-2.72.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C491,204.6,488.8,206.7,486.2,206.7z");
 
@@ -615,7 +619,7 @@ namespace pxsim.visuals {
                     let ledleft = j * ledoffw + left;
                     let k = i * 5 + j;
                     this.ledsOuter.push(svg.child(this.g, "rect", { class: "sim-led-back", x: ledleft, y: ledtop, width: 10, height: 20, rx: 2, ry: 2 }));
-                    this.leds.push(svg.child(this.g, "rect", { class: "sim-led", x: ledleft - 2, y: ledtop - 2, width: 14, height: 24, rx: 3, ry: 3, title: `(${j},${i})` }));
+                    this.leds.push(svg.child(this.g, "rect", { class: "sim-led", filter: "url(#ledglow)", x: ledleft - 2, y: ledtop - 2, width: 14, height: 24, rx: 3, ry: 3, title: `(${j},${i})` }));
                 }
             }
 
