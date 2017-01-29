@@ -1,16 +1,14 @@
 # Guitar
 
-### @description A beginner-intermediate maker activity, building a guitar with the @boardname@  
+### @description A beginner-intermediate maker activity, building a shooter with the @boardname@  
 
 ### ~avatar avatar
 
-Hello dutch! This is a test
-
-Make a @boardname@ guitar with this guided tutorial!
+Make a @boardname@ shooter with this guided tutorial!
 
 ### ~
 
-https://youtu.be/GYmdTFvxz80
+https://www.youtube.com/watch?v=0M5uc3rP7q4
 
 ## Duration
 
