@@ -620,9 +620,6 @@ namespace pxt {
 
     MicroBitEvent lastEvent;
 
-    // We have the invariant that if [dispatchEvent] is registered against the DAL
-    // for a given event, then [handlersMap] contains a valid entry for that
-    // event.
     void dispatchEvent(MicroBitEvent e) {
 
       lastEvent = e;
@@ -636,12 +633,14 @@ namespace pxt {
         runAction1(curr, e.value);
     }
 
-    void registerWithDal(int id, int event, Action a) {
+    int concurrencyModel = MESSAGE_BUS_LISTENER_QUEUE_IF_BUSY;
+
+    void registerWithDal(int id, int event, Action a)  {
       Action prev = handlersMap[{ id, event }];
       if (prev)
         decr(prev);
       else
-        uBit.messageBus.listen(id, event, dispatchEvent);
+        uBit.messageBus.listen(id, event, dispatchEvent, concurrencyModel);
       incr(a);
       handlersMap[{ id, event }] = a;
     }

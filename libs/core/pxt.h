@@ -10,6 +10,7 @@
 #include "ManagedString.h"
 #include "ManagedType.h"
 #include "ManagedBuffer.h"
+#include "MicroBitListener.h"
 
 #define printf(...) uBit.serial.printf(__VA_ARGS__)
 // #define printf(...)
@@ -32,7 +33,6 @@ namespace pxt {
   typedef uint32_t Action;
   typedef uint32_t ImageLiteral;
 
-
   typedef enum {
     ERR_INVALID_BINARY_HEADER = 5,
     ERR_OUT_OF_BOUNDS = 8,
@@ -47,6 +47,7 @@ namespace pxt {
 
   // Utility functions
   extern MicroBitEvent lastEvent;
+  extern int concurrencyModel;
   void registerWithDal(int id, int event, Action a);
   void runInBackground(Action a);
   uint32_t runAction3(Action a, int arg0, int arg1, int arg2);

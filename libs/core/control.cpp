@@ -113,6 +113,12 @@ enum EventBusValue {
     MES_REMOTE_CONTROL_EVT_VOLUMEUP_ = MES_REMOTE_CONTROL_EVT_VOLUMEUP,
 };
 
+enum ConcurrencyModel {
+	MESSAGE_BUS_LISTENER_REENTRANT_ = MESSAGE_BUS_LISTENER_REENTRANT,
+	MESSAGE_BUS_LISTENER_QUEUE_IF_BUSY_ = MESSAGE_BUS_LISTENER_QUEUE_IF_BUSY,
+	MESSAGE_BUS_LISTENER_DROP_IF_BUSY_ = MESSAGE_BUS_LISTENER_DROP_IF_BUSY
+};
+
 //% weight=1 color="#333333"
 //% advanced=true
 namespace control {
@@ -205,5 +211,15 @@ namespace control {
     //% advanced=true
     int deviceSerialNumber() {
         return microbit_serial_number();
+    }
+
+
+    /**
+     * Set the default concurrency model
+     */
+    //% blockId="control_concurrency_model" block="concurrency model %c" weight=9
+    //% advanced=true
+    void setConcurrencyModel(ConcurrencyModel c) {
+         pxt::concurrencyModel = c;
     }
 }

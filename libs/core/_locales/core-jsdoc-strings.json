@@ -62,6 +62,7 @@
   "control.raiseEvent|param|value": "Component specific code indicating the cause of the event.",
   "control.reset": "Resets the BBC micro:bit.",
   "control.runtimeWarning": "Display warning in the simulator.",
+  "control.setConcurrencyModel": "Set the default concurrency model",
   "control.waitMicros": "Blocks the current fiber for the given microseconds",
   "control.waitMicros|param|micros": "number of micro-seconds to wait. eg: 4",
   "game": "A single-LED sprite game engine",

@@ -426,6 +426,13 @@ declare namespace control {
     //% blockId="control_device_serial_number" block="device serial number" weight=9
     //% advanced=true shim=control::deviceSerialNumber
     function deviceSerialNumber(): number;
+
+    /**
+     * Set the default concurrency model
+     */
+    //% blockId="control_concurrency_model" block="concurrency model %c" weight=9
+    //% advanced=true shim=control::setConcurrencyModel
+    function setConcurrencyModel(c: ConcurrencyModel): void;
 }
 
 
