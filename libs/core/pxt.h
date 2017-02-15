@@ -47,7 +47,7 @@ namespace pxt {
 
   // Utility functions
   extern MicroBitEvent lastEvent;
-  extern int concurrencyModel;
+  extern uint16_t concurrencyModel;
   void registerWithDal(int id, int event, Action a);
   void runInBackground(Action a);
   uint32_t runAction3(Action a, int arg0, int arg1, int arg2);

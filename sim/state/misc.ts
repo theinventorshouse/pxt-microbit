@@ -69,6 +69,7 @@ namespace pxsim.control {
 
 namespace pxsim.pxtcore {
     export function registerWithDal(id: number, evid: number, handler: RefAction) {
+        // TODO: difference concurrency models
         board().bus.listen(id, evid, handler);
     }
 }

@@ -633,7 +633,7 @@ namespace pxt {
         runAction1(curr, e.value);
     }
 
-    int concurrencyModel = MESSAGE_BUS_LISTENER_QUEUE_IF_BUSY;
+    uint16_t concurrencyModel = MESSAGE_BUS_LISTENER_QUEUE_IF_BUSY;
 
     void registerWithDal(int id, int event, Action a)  {
       Action prev = handlersMap[{ id, event }];
