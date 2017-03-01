@@ -242,6 +242,7 @@ namespace pxsim.visuals {
         private pins: SVGElement[];
         private pinGradients: SVGLinearGradientElement[];
         private pinTexts: SVGTextElement[];
+        private ledsg: SVGElement;
         private ledsOuter: SVGElement[];
         private leds: SVGElement[];
         private systemLed: SVGCircleElement;
@@ -294,6 +295,32 @@ namespace pxsim.visuals {
 
         public getPinDist(): number {
             return littlePinDist * 1.7;
+        }
+
+        public downloadScreenImage() {
+            const cvs = document.createElement("canvas") as HTMLCanvasElement;
+            const ctx = cvs.getContext("2d");
+            const img = document.createElement("img") as HTMLImageElement;
+
+            cvs.width = 200;
+            cvs.height = 200;
+            img.onload = function () {
+                ctx.fillStyle = "#000";
+                ctx.fillRect(0, 0, 200, 200);
+                ctx.drawImage(img, 0, 0, 200, 200);
+                const canvasdata = cvs.toDataURL("image/png");
+                let link = <any>window.document.createElement('a');
+                link.href = canvasdata;
+                link.download = name;
+                document.body.appendChild(link); // for FF
+                link.click();
+                document.body.removeChild(link);
+                window.open(canvasdata)
+            };
+            let xml = new XMLSerializer().serializeToString(this.ledsg);
+            xml = `<svg xmlns="http://www.w3.org/2000/svg" 
+                width="200" height="200" viewBox="150 110 200 200">${xml}</svg>`
+            img.src = svg.toDataUri(xml);
         }
 
         public recordPinCoords() {
@@ -607,6 +634,8 @@ namespace pxsim.visuals {
             this.logos.push(svg.child(this.g, "polygon", { class: "sim-theme", points: "446.2,164.6 446.2,132.8 477.9,132.8" }));
 
             // leds
+            this.ledsg = svg.child(this.g, "g");
+            this.ledsg.onclick = () => this.downloadScreenImage();
             this.leds = [];
             this.ledsOuter = [];
             let left = 154, top = 113, ledoffw = 46, ledoffh = 44;
@@ -615,8 +644,8 @@ namespace pxsim.visuals {
                 for (let j = 0; j < 5; ++j) {
                     let ledleft = j * ledoffw + left;
                     let k = i * 5 + j;
-                    this.ledsOuter.push(svg.child(this.g, "rect", { class: "sim-led-back", x: ledleft, y: ledtop, width: 10, height: 20, rx: 2, ry: 2 }));
-                    this.leds.push(svg.child(this.g, "rect", { class: "sim-led", x: ledleft - 2, y: ledtop - 2, width: 14, height: 24, rx: 3, ry: 3, title: `(${j},${i})` }));
+                    this.ledsOuter.push(svg.child(this.ledsg, "rect", { class: "sim-led-back", x: ledleft, y: ledtop, width: 10, height: 20, rx: 2, ry: 2 }));
+                    this.leds.push(svg.child(this.ledsg, "rect", { class: "sim-led", x: ledleft - 2, y: ledtop - 2, width: 14, height: 24, rx: 3, ry: 3, title: `(${j},${i})` }));
                 }
             }
 
