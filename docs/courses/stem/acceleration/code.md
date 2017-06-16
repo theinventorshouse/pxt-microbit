@@ -38,55 +38,40 @@ The function `accelration(z)` returns a number between 0 and 1024. We want to us
 
 ```blocks
 let acceleration = 0
-basic.forever(() => {    acceleration = input.acceleration(Dimension.Z)    acceleration = Math.abs(input.acceleration(Dimension.Z))    acceleration = input.acceleration(Dimension.Z) / 4}) 
+basic.forever(() => {    acceleration = input.acceleration(Dimension.Z)    
+acceleration = Math.abs(input.acceleration(Dimension.Z))   
+acceleration = input.acceleration(Dimension.Z) / 4}) 
 
 ```
+
+Now let's use acceleration value to set the brightness of the BBC micro:bi using `plot bar graph`.
+
+
+```blocks
 let acceleration = 0
 basic.forever(() => {
     acceleration = input.acceleration(Dimension.Z)
     acceleration = Math.abs(input.acceleration(Dimension.Z))
     acceleration = input.acceleration(Dimension.Z) / 4
+    led.plotBarGraph(
+    acceleration,
+    0
+    )
 })
+
+
 
 ```
-  
 
-We want to code the notes that will be played `on pin pressed`. We click on the Input drawer then insert a `for loop` that will increment by *i*. Click on the Variables drawer. Add `set item` block. Rename the variable block to "sound." Then add a Maths block to increase the variable sound from the note frequency of block `A` to `A` plus 25.Modify your code so that your code looks like this
-
-```blocks
-let sound = music.noteFrequency(Note.A);
-input.onPinPressed(TouchPin.P1, () => {
-    for (let i = 0; i < 4; i++) {
-        sound = sound + 25
-    }
-})
-```
+### Challenge 1
 
 
-* click *Download* to see if the code works as expected.
+![](\static\mb\courses\stem\acc\acc_challenge1.jpg)
 
+Spin BBC micro:bit in a dark room. Move the BBC micro:bit like a fidget spinner and produce a slow image that captures the pattern of the BBC micro:bit LEDs.
 
+### Challenge 2
 
-Let's include a second sound `on pin pressed` *P2*. To do this, you need to add the same blocks as the banana keyboard activity. However, you must change alter `on pin pressed` from P1 to P2. Additionally, you must *decrease* the frequency of the variable "sound" by 25. Modify your code so that your code looks like this. You will need to include a second banana to a alligator (spring) clip in the same procedure as the first activity. 
-
-```blocks
-let sound = music.noteFrequency(Note.A);
-
-input.onPinPressed(TouchPin.P1, () => {
-    for (let i = 0; i < 4; i++) {
-        sound = sound + 25
-    }
-})
-
-input.onPinPressed(TouchPin.P2, () => {
-    for (let i = 0; i < 4; i++) {
-        sound = sound - 25
-    }
-})
-```
-
-The code for the radio dashboard activity is available here
-
-Go to https://makecode.microbit.org/examples/radio-dashboard.
+Replace "z" in `acceleration(z)` with "x" or "y". Changing the axis will cause the BBC micro:bit to measure the force in a different direction. What differences in the resulting pattern does this replacement make`
 
 * click *Download* to see if the code works as expected.
