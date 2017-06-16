@@ -112,10 +112,15 @@ basic.forever(() => {
 })
 ```
 
-We want to 
+# Connect
+
+We want to connect our plant's moinsture sensor to the other plants' moisture sensors through radio. 
+
+We want to `send number` to transmit our status to the `radio dashboard` micro:bit. 
 
 
-The code for the radio dashboard activity is available here
+
+The code for the `radio dashboard` is here:
 
 Go to https://makecode.microbit.org/examples/radio-dashboard.
 
