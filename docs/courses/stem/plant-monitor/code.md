@@ -6,57 +6,77 @@ Soil moisture sensors work by measuring the level of current flowing between two
 moisture sensor using common materials such as aluminium foil, metal roads, insulating tape, foam blocks, insulated wire etc. They can be tested before use by
 attaching a bulb and cell, checking that the bulb lights up when the electrodes are inserted into damp soil.
 
+
+
 The moisture sensor is then attached
 to the micro:bit edge connector with
 crocodile clips. 
 
+### Experiment 1:
+
+In Experiment 1, The first step is to create the `forever` loop for to test the current oof the pin.
 
 ```blocks
-let sound = music.noteFrequency(Note.A);
+basic.forever(() => {
+
+})
+
 ```
 
-We want to play music on pin pressed in order to register an event handler that will execute whenever when you run a script and click pin 1 on the simulator. We must start by opening the Input drawer and adding `on pin pressed` P1. Modify your code so that your code looks like this.
+Next, we want to read the current from Pin 0. So we want to set the current to the `analog read pin P0`.
+
 
 ```blocks
-let sound = music.noteFrequency(Note.A);
-input.onPinPressed(TouchPin.P1, () => {
-
+let current = 0
+basic.forever(() => {
+    current = pins.analogReadPin(AnalogPin.P0)
 })
+
 ```
 
-We want to code the notes that will be played `on pin pressed`. We click on the Input drawer then insert a `for loop` that will increment by *i*. Click on the Variables drawer. Add `set item` block. Rename the variable block to "sound." Then add a Maths block to increase the variable sound from the note frequency of block `A` to `A` plus 25.Modify your code so that your code looks like this
+We want to visualize the read pin from the current to show the amount of current from the soil to the pin. The best way to visualize this activity is with the `plot bar graph`. Modify your code so that your code looks like this.
+
 
 ```blocks
-let sound = music.noteFrequency(Note.A);
-input.onPinPressed(TouchPin.P1, () => {
-    for (let i = 0; i < 4; i++) {
-        sound = sound + 25
-    }
+let current = 0
+basic.forever(() => {
+    current = pins.analogReadPin(AnalogPin.P0)
+    led.plotBarGraph(
+    current,
+    0
+    )
 })
+
 ```
 
+### Experiment 2: 
 
-* click *Download* to see if the code works as expected.
+In Experiment 2, we will continue building on the visualization of the current senstivity with show icon that reflect the current from the soil. In this experiement, we will use a condition to test the moisture of the soil.  
 
 
+We to receive an icon that reflect the current from the soil. In this experiement, we will use a condition to test the moisture of the soil. Let's add a `forever` loop that will constantly take the current read pin.
 
-Let's include a second sound `on pin pressed` *P2*. To do this, you need to add the same blocks as the banana keyboard activity. However, you must change alter `on pin pressed` from P1 to P2. Additionally, you must *decrease* the frequency of the variable "sound" by 25. Modify your code so that your code looks like this. You will need to include a second banana to a alligator (spring) clip in the same procedure as the first activity. 
 
 ```blocks
-let sound = music.noteFrequency(Note.A);
 
-input.onPinPressed(TouchPin.P1, () => {
-    for (let i = 0; i < 4; i++) {
-        sound = sound + 25
-    }
+basic.forever(() => {
+   
 })
 
-input.onPinPressed(TouchPin.P2, () => {
-    for (let i = 0; i < 4; i++) {
-        sound = sound - 25
-    }
-})
 ```
+
+
+Next, we want to read the current from Pin 0. So we want to set the current to the `analog read pin P0`.
+
+
+```blocks
+let current = 0
+basic.forever(() => {
+    current = pins.analogReadPin(AnalogPin.P0)
+})
+
+```
+
 
 The code for the radio dashboard activity is available here
 
