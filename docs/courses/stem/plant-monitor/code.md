@@ -66,7 +66,7 @@ basic.forever(() => {
 ```
 
 
-Next, we want to read the current from Pin 0. So we want to set the current to the `analog read pin P0`.
+Next, we want to read the current from Pin 0. So we want to set the variable to current and return the current as a number on the `analog read pin P0`.
 
 
 ```blocks
@@ -76,6 +76,43 @@ basic.forever(() => {
 })
 
 ```
+
+
+We want to set two conditions to determine the current from Pin 0. We will set the variable to current and the variable `current` will be a number from the `analog read pin P0`. The first condition for current less than 100 and the second condition is for current to be greater than 900.
+
+
+```blocks
+let current = 0
+basic.forever(() => {
+    current = pins.analogReadPin(AnalogPin.P0)
+    if (current < 100) {
+    	
+    } else if (current > 900) {
+    	
+    } else {
+    	
+    }
+})
+```
+
+Now, we have two conditions to determine the current in the soil. We  want to add `set icon` to visualize when the current is not enough or if too high. We will add `set icon` to provide feedback from the soil. In the first condition, the current is less than 100. So the `show icon` will display a `sad` expression. In the second condition, the current is greater than 900, so the `show icon` will display a `happy` expression. If the current is not satifying either conditions, then the `show icon` will display a `confused` expression.
+
+
+```blocks
+let current = 0
+basic.forever(() => {
+    current = pins.analogReadPin(AnalogPin.P0)
+    if (current < 100) {
+        basic.showIcon(IconNames.Sad)
+    } else if (current > 900) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Confused)
+    }
+})
+```
+
+We want to 
 
 
 The code for the radio dashboard activity is available here
