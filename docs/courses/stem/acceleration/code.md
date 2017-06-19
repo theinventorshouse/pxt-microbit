@@ -72,6 +72,6 @@ Spin BBC micro:bit in a dark room. Move the BBC micro:bit like a fidget spinner 
 
 ### Challenge 2
 
-Replace "z" in `acceleration(z)` with "x" or "y". Changing the axis will cause the BBC micro:bit to measure the force in a different direction. What differences in the resulting pattern does this replacement make`
+Replace "z" in `acceleration(z)` with "x" or "z". Changing the axis will cause the BBC micro:bit to measure the force in a different direction. What differences in the resulting pattern does this replacement make`
 
 * click *Download* to see if the code works as expected.
