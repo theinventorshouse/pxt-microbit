@@ -1,8 +1,8 @@
 # Code
 
-Have you ever tried to making your fidget spinner? Let's try creating code dynamic fidget spinner!
+Have you ever tried to detect acceleration? Let's try creating code for an acceleration experiment!
 
-Welcome! This activity will create a pendulum that glows using acceleration. Create a `forever` loop that will constantly display the appropriate brightness on the LED display.  
+Welcome! This activity will create an experiment using acceleration. Create a `forever` loop that will constantly display the appropriate brightness on the LED display.  
 
 ```blocks
 basic.forever(() => {
@@ -38,9 +38,9 @@ The function `accelration(z)` returns a number between 0 and 1024. We want to us
 
 ```blocks
 let acceleration = 0
-basic.forever(() => {    acceleration = input.acceleration(Dimension.Z)    
+basic.forever(() => {    acceleration = input.acceleration(Dimension.Y)    
 acceleration = Math.abs(input.acceleration(Dimension.Z))   
-acceleration = input.acceleration(Dimension.Z) / 4}) 
+acceleration = input.acceleration(Dimension.Y) / 4}) 
 
 ```
 
@@ -51,7 +51,7 @@ Now let's use acceleration value to set the brightness of the BBC micro:bi using
 let acceleration = 0
 basic.forever(() => {
     acceleration = input.acceleration(Dimension.Z)
-    acceleration = Math.abs(input.acceleration(Dimension.Z))
+    acceleration = Math.abs(input.acceleration(Dimension.Y))
     acceleration = input.acceleration(Dimension.Z) / 4
     led.plotBarGraph(
     acceleration,
