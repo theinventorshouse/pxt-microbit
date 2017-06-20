@@ -1,6 +1,6 @@
 # Code
 
-Have you ever tried to checking your vision lately? Let's try creating code dynamic to identify when the line changes from blinking LEDs to solid LED diagonal!
+Have you ever tried to checking your vision lately? Let's try creating code dynamic to identify when the line changes from blinking LEDs to the perception of being a solid LED diagonal line!
 
 Welcome! This activity will use the X and Y coordinates to slowly join two opposite corners of a the LEDs square display. Create an  `on start` that will set the initial pause.  
 
