@@ -138,7 +138,16 @@ temperature = 100
 
 ## Step 6: Display temperature change.
 
+We want to conditionally run code depending on whether a Boolean condition is true or false. We want to display certain icons to reflect the temperature being changed on shake. We will create two condition statements. After displaying an icon, the icon will be cleared from the screen with clear screen. Then we will pause program execution for 100 milliseconds. This function is helpful to slow down the program's execution.
 
+The first condition statement follows this logic: 
+- change the temperature by 20 if the temperature is less than the atmospheric temperature.
+- change the temperature by -20 if the temperature is not less than the atmos_temperature. 
+
+The second condition follows this logic: 
+- show icon with a symbol of a solid if the temperature is less than 32 degrees.
+- show icon with a sybmol of a liquid (umbrella) if the temperature is less than 212 degrees.
+- show icon with a symbol of a gas if the temperature is greater than or equal to 212 degrees.  
 
 ```blocks
 let atmos_temperature = 0
