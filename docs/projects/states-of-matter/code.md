@@ -1,229 +1,185 @@
-# Code  
+# Code
+### @description code to make a representation for states of matter
 
-Have you ever tried to represent the states of matter? Let's try make an experiment that represents atmospheric temperatures!
+### ~avatar avatar
 
-Experiment 1:
+Add code to detect the visualization of States of Matter.
 
-Let’s start by adding variables where you can store data. Then rename the variables to be “temperature” and “atmospheric_temperature”. Then set the value of the variable “temperature” and “atmospheric_temperature” to 0.
+### ~
+
+## Duration: ~30 minutes
+
+## Step 1: wire up the aluminum foil for detecting states of matter.
+
+Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
+
+https://youtu.be/Hdsy93yaQC0 (https://youtu.be/Hdsy93yaQC0)
+
+Have you ever tried to represent the states of matter? Let's try make an experiment that visually represents various states of matter based on atmospheric temperatures!
+
+
+## Step 2: Add variables.
+
+
+In order for States of Matter to follow the rules for determining the  atmospheric temperature, we need to add variables that will store data. Then we will assign (set) the value of the variables. We want to name the two (2) variables as follows: “atmos_temperature” and “temperature”. Set the value of the variables to 100.  Modify your code so that your code looks like this.
 
 ```blocks
+let temperature = 100
+let atmos_temperature = 100
+
+```
+
+
+## Step 3: Detect a Solid.
+
+We want to detect a solid for the atmospheric temperature. On Pin 2 Pressed, you want to represent an atmospheric temperature of 0 and scroll the message SOLID. We want to set atmos_temperature to 0 and show string as a Solid. Modify your code so that your code looks like this:
+
+```blocks
+let atmos_temperature = 0
 let temperature = 0
-let ambient_temperature = 0
-
-```
-
-We will register an event handler on the aluminum foil that will execute when two things occur: first, the alligator clip will attach to aluminum foil doppler that connects to another pin.
-
-We want to display a countdown timer on pin pressed in order to register an event handler that will execute whenever when you run a script and click pin 0 on the simulator. We must start by opening the Input drawer and adding on pin pressed P0. Modify your code so that your code looks like this.
-
-```blocks
-let start = 0
-let end = 0
-let false_start = false
-let running = false
-running = false
-false_start = false
-end = 0
-start = 0
-input.onPinPressed(TouchPin.P0, () => {
-    
-    }
-})
-```
-
-We want to code the countdown timer that will be played on pin pressed. We click on the Basics drawer then insert three show number blocks to visually display the countdown: 3 2 1. Then we want to add a Basic block clear screen, which is found under Basic ... (more Basic blocks). Modify your code so that your code looks like this:
-
-```blocks
-let start = 0
-
-let end = 0
-
-let false_start = false
-
-let running = false
-
-input.onPinPressed(TouchPin.P0, () => {
-	basic.showNumber(3)
-	basic.showNumber(2)
-	basic.showNumber(1)
-    
-	basic.clearScreen()
-    
-    }
-})
-```
-
-* click Download to see if the code works as expected.
-
-We want to set running to false and set false start to false. This occurs on pin pressed. Modify your code so that your code looks like this:
-
-```blocks
-let end = 0
-
-let start = 0
-
-let false_start = false
-
-let running = false
-
-input.onPinPressed(TouchPin.P0, () => {
-    
-basic.showNumber(3)
-    
-basic.showNumber(2)
-    
-basic.showNumber(1)
-    
-basic.clearScreen()
-    
-running = false
-    
-false_start = false
-})
-```
-
-We want to set a random pause before the random LED is being displayed. Modify your code so that your code looks like this:
-
-```blocks
-let end = 0
-
-let false_start = false
-
-let running = false
-
-let start = 0
-
-input.onPinPressed(TouchPin.P0, () => {
-    
-basic.showNumber(3)
-    
-basic.showNumber(2)
-    
-basic.showNumber(1)
-   
-basic.clearScreen()
-    
-running = false
-    
-false_start = false
-    
-basic.pause(1000 + Math.random(2000))
-
-})
-```
-
-We want to introduce the game on pin pressed 0 that displays a randomly placed LED on the x and y coordinates. The randomly generated LED will be displayed only  when there has not been a false start by the player. Modify your code so that your code looks like this:
-
-```blocks
-let start = 0
-
-let end = 0
-
-let false_start = false
-
-let running = false
-
-input.onPinPressed(TouchPin.P0, () => {
-    
-basic.showNumber(3)
-    
-basic.showNumber(2)
-    
-basic.showNumber(1)
-    
-basic.clearScreen()
-    
-running = false
-    
-false_start = false
-    
-basic.pause(1000 + Math.random(2000))
-    
-if (!(false_start)) {
-        
-start = input.runningTime()
-        
-running = true
-        
-led.stopAnimation()
-        
-basic.clearScreen()
-        
-led.plot(Math.random(5), Math.random(5))
-    }
-})
-```
-
-We want to display one of two images on pin pressed 1. The first image will display only if the player correctly completes the circuit between GND and P1 after the randomly generated LED appears. The seconde image will display only if the player completes a circuit between GND and P1 on a false start. Modify your code so that your code looks like this:  
-
-
-```blocks
-let temperature = 0
-
-let ambient_temperature = 0
-
 input.onGesture(Gesture.Shake, () => {
-    
-temperature += 50
-    
-basic.showIcon(IconNames.Triangle)
+    temperature += 50
+    basic.showIcon(IconNames.Triangle)
 })
-
-basic.forever(() => {
-    
-if (temperature < ambient_temperature) {
-        
-temperature += 20
-    } 
-else {
-        
-temperature += -20
-    
-}
-    
-if (temperature < 32) {
-        
-basic.showIcon(IconNames.Square)
-    } 
-else if (temperature < 212) {
-        
-basic.showIcon(IconNames.Umbrella)
-    } 
-else {
-        
-basic.showIcon(IconNames.Chessboard)
-    }
-   
-basic.clearScreen()
-    
-basic.pause(100)
-})
-
 input.onPinPressed(TouchPin.P2, () => {
-    
-ambient_temperature = 0
-    
-basic.showString("SOLID")
+    atmos_temperature = 0
+    basic.showString("SOLID")
 })
+atmos_temperature = 100
+temperature = 100
 
+```
+
+## Step 4: Detect a Liquid.
+
+We want to detect a liquid for the atmospheric temperature. On Pin 1 Pressed, you want to represent an atmospheric temperature of 80 and scroll the message LIQUID. We want to set atmos_temperature to 80 and show string as a liquid. Modify your code so that your code looks like this:
+
+```blocks
+let temperature = 0
+let atmos_temperature = 0
+input.onPinPressed(TouchPin.P2, () => {
+    atmos_temperature = 0
+    basic.showString("SOLID")
+})
 input.onPinPressed(TouchPin.P1, () => {
-    
-ambient_temperature = 80
-    
-basic.showString("LIQUID")
+    atmos_temperature = 80
+    basic.showString("LIQUID")
 })
-
-input.onPinPressed(TouchPin.P0, () => {
-    
-ambient_temperature = 250
-    
-basic.showString("GAS")
-})
-
-ambient_temperature = 100
-
+atmos_temperature = 100
 temperature = 100
 
 ```
 
 * click *Download* to see if the code works as expected.
+
+
+## Step 5: Detect a Gas.
+
+We want to detect a liquid for the atmospheric temperature. On Pin 1 Pressed, you want to represent an atmospheric temperature of 80 and scroll the message LIQUID. We want to set atmos_temperature to 80 and show string as a liquid. Modify your code so that your code looks like this:
+
+```blocks
+let atmos_temperature = 0
+let temperature = 0
+input.onGesture(Gesture.Shake, () => {
+    temperature += 50
+    basic.showIcon(IconNames.Triangle)
+})
+input.onPinPressed(TouchPin.P0, () => {
+    atmos_temperature = 250
+    basic.showString("GAS")
+})
+input.onPinPressed(TouchPin.P2, () => {
+    atmos_temperature = 0
+    basic.showString("SOLID")
+})
+input.onPinPressed(TouchPin.P1, () => {
+    atmos_temperature = 80
+    basic.showString("LIQUID")
+})
+atmos_temperature = 100
+temperature = 100
+
+```
+
+* click *Download* to see if the code works as expected.
+
+
+## Step 6: Increase temperature.
+
+We want to display a change of temperature on shake. When you shake the states of matter experiment, there will be a show icon to represent an increase in temperature. Modify your code so that your code looks like this:
+
+```blocks
+let atmos_temperature = 0
+let temperature = 0
+input.onGesture(Gesture.Shake, () => {
+    temperature += 50
+    basic.showIcon(IconNames.Triangle)
+})
+input.onPinPressed(TouchPin.P0, () => {
+    atmos_temperature = 250
+    basic.showString("GAS")
+})
+input.onPinPressed(TouchPin.P2, () => {
+    atmos_temperature = 0
+    basic.showString("SOLID")
+})
+input.onPinPressed(TouchPin.P1, () => {
+    atmos_temperature = 80
+    basic.showString("LIQUID")
+})
+atmos_temperature = 100
+temperature = 100
+
+
+```
+
+* click Download to see if the code works as expected.
+
+
+## Step 6: Display temperature change.
+
+
+
+```blocks
+let atmos_temperature = 0
+let temperature = 0
+input.onGesture(Gesture.Shake, () => {
+    temperature += 50
+    basic.showIcon(IconNames.Triangle)
+})
+basic.forever(() => {
+    if (temperature < atmos_temperature) {
+        temperature += 20
+    } else {
+        temperature += -20
+    }
+    if (temperature < 32) {
+        basic.showIcon(IconNames.Square)
+    } else if (temperature < 212) {
+        basic.showIcon(IconNames.Umbrella)
+    } else {
+        basic.showIcon(IconNames.Chessboard)
+    }
+    basic.clearScreen()
+    basic.pause(100)
+})
+input.onPinPressed(TouchPin.P0, () => {
+    atmos_temperature = 250
+    basic.showString("GAS")
+})
+input.onPinPressed(TouchPin.P2, () => {
+    atmos_temperature = 0
+    basic.showString("SOLID")
+})
+input.onPinPressed(TouchPin.P1, () => {
+    atmos_temperature = 80
+    basic.showString("LIQUID")
+})
+atmos_temperature = 100
+temperature = 100
+
+
+```
+
+* click Download to see if the code works as expected.
+
