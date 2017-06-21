@@ -13,11 +13,11 @@ Add code to make the Reaction Time interactive.
 
 Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
 
-https://youtu.be/DgJ-S0q0EMs (https://youtu.be/DgJ-S0q0EMs)
+https://youtu.be/DgJ-S0q0EMs 
 
 ## Step 2: add variables
 
-The reaction time experiment will be completed by a single player, first..
+The reaction time experiment will be completed by a single player, first.
 
 In order for Reaction Time to follow the rules for determining the player's reaction speed, we need to add variables that will store data. Then we will assign (set) the value of the variables. We want to name the four (4) variables as follows: “start”, “end”, “false_start”, and “running”. Set the value of the variables, “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
 

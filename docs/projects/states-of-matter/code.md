@@ -13,7 +13,7 @@ Add code to detect the visualization of States of Matter.
 
 Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
 
-https://youtu.be/Hdsy93yaQC0 (https://youtu.be/Hdsy93yaQC0)
+(https://youtu.be/Hdsy93yaQC0)
 
 Have you ever tried to represent the states of matter? Let's try make an experiment that visually represents various states of matter based on atmospheric temperatures!
 
