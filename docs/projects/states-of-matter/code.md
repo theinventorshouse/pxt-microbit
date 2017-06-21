@@ -1,6 +1,6 @@
 # Code  
 
-Have you ever tried to build the boardgame "Operation"? Let's try making a game where you control atmospheric temperature!
+Have you ever tried to represent the states of matter? Let's try make an experiment that represents atmospheric temperatures!
 
 Experiment 1:
 
