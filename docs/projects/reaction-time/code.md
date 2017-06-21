@@ -13,12 +13,12 @@ Add code to make the Reaction Time interactive.
 
 Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
 
-https://youtu.be/m-HS8OyS0pw
+https://youtu.be/DgJ-S0q0EMs (https://youtu.be/DgJ-S0q0EMs)
 
-## Step 1: variables
+## Step 2: add variables
 
 
-In order for the Reaction Game to follow the rules for determining the player's reaction speed, we need to set variables to store data. Then we will name the  variables: “start”, “end”, “false_start”, and “running”. Set the value of the variables, “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
+In order for Reaction Time to follow the rules for determining the player's reaction speed, we need to add variables that will store data. Then we will assign (set) the value of the variables. We want to name the four (4) variables as follows: “start”, “end”, “false_start”, and “running”. Set the value of the variables, “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
 
 In the code below: 
 - the reaction time experiment will start and end at specific times based on the player's reaction.
@@ -34,150 +34,152 @@ false_start = false
 end = 0
 start = 0
 
+
 ```
 
 ## Step 2: on pin pressed
 
 
-We want to display a countdown timer on pin pressed in order to register an event handler that will execute whenever when you run a script and click pin 0 on the simulator. We must start by opening the Input drawer and adding on pin pressed P0. Modify your code so that your code looks like this.
+We want to register an event handler that will execute whenever the user holds the GND pin with one hand, and presses pin 0 or pin with the other hand, thus completing a circuit. When you run a script with this function in a web browser, click pins 0 or 1 in the simulator. The game will start on P0 and the P1 will detect when the player visualizes a single LED on the screen. Modify your code so that your code looks like this.
 
 ```blocks
 let start = 0
 let end = 0
 let false_start = false
 let running = false
+input.onPinPressed(TouchPin.P0, () => {
+	
+})
+input.onPinPressed(TouchPin.P1, () => {
+	
+})
 running = false
 false_start = false
 end = 0
 start = 0
-input.onPinPressed(TouchPin.P0, () => {
-    
-    }
-})
-```
 
-We want to code the countdown timer that will be played on pin pressed. We click on the Basics drawer then insert three show number blocks to visually display the countdown: 3 2 1. Then we want to add a Basic block clear screen, which is found under Basic ... (more Basic blocks). Modify your code so that your code looks like this:
+```
+## Step 2: countdown timer
+
+We want to code the countdown timer that will be displayed on pin pressed 0. We will insert three show number blocks to visually display the countdown: 3 2 1. Then we want to add a Basic block clear screen to clear the numbers from the screen. Modify your code so that your code looks like this:
 
 ```blocks
 let start = 0
-
 let end = 0
-
 let false_start = false
-
 let running = false
-
 input.onPinPressed(TouchPin.P0, () => {
-    
-	basic.showNumber(3)
-    
-	basic.showNumber(2)
-    
-	basic.showNumber(1)
-    
-	basic.clearScreen()
-    
-    }
+    basic.showNumber(3)
+    basic.showNumber(2)
+    basic.showNumber(1)
+    basic.clearScreen()
 })
+input.onPinPressed(TouchPin.P1, () => {
+	
+})
+running = false
+false_start = false
+end = 0
+start = 0
+
 ```
 
 * click Download to see if the code works as expected.
 
-We want to set running to false and set false start to false. This occurs on pin pressed. Modify your code so that your code looks like this:
+## Step 3: boolean variables
+
+We want to set variables, running and set false start to false. This occurs on pin 0 pressed. Those  blocks represent the true and false Boolean values. A Boolean has one of two possible values: true; false.
+
+Modify your code so that your code looks like this:
 
 ```blocks
-let end = 0
-
 let start = 0
-
+let end = 0
 let false_start = false
-
 let running = false
-
 input.onPinPressed(TouchPin.P0, () => {
-    
-basic.showNumber(3)
-    
-basic.showNumber(2)
-    
-basic.showNumber(1)
-    
-basic.clearScreen()
-    
-running = false
-    
-false_start = false
+    basic.showNumber(3)
+    basic.showNumber(2)
+    basic.showNumber(1)
+    basic.clearScreen()
+    running = false
+    false_start = false
 })
+input.onPinPressed(TouchPin.P1, () => {
+	
+})
+running = false
+false_start = false
+end = 0
+start = 0
+
 ```
 
-We want to set a random pause before the random LED is being displayed. Modify your code so that your code looks like this:
+
+## Step 4: begin reaction time experiment randomly 
+
+We want to set a random pause before the reaction time experiment begins. Modify your code so that your code looks like this:
 
 ```blocks
-let end = 0
-
-let false_start = false
-
-let running = false
-
 let start = 0
-
+let end = 0
+let false_start = false
+let running = false
 input.onPinPressed(TouchPin.P0, () => {
-    
-basic.showNumber(3)
-    
-basic.showNumber(2)
-    
-basic.showNumber(1)
-   
-basic.clearScreen()
-    
-running = false
-    
-false_start = false
-    
-basic.pause(1000 + Math.random(2000))
-
+    basic.showNumber(3)
+    basic.showNumber(2)
+    basic.showNumber(1)
+    basic.clearScreen()
+    running = false
+    false_start = false
+    basic.pause(1000 + Math.random(2000))
 })
+input.onPinPressed(TouchPin.P1, () => {
+	
+})
+running = false
+false_start = false
+end = 0
+start = 0
+
 ```
 
-We want to introduce the game on pin pressed 0 that displays a randomly placed LED on the x and y coordinates. The randomly generated LED will be displayed only  when there has not been a false start by the player. Modify your code so that your code looks like this:
+## Step 5: begin reaction time experiment randomly 
+
+
+We want to introduce the reaction time experiment if there is not a false start on pin 0 pressed. Reaction time will randomly plot a LED on the x and y coordinates. Modify your code so that your code looks like this:
 
 ```blocks
 let start = 0
-
 let end = 0
-
 let false_start = false
-
 let running = false
-
 input.onPinPressed(TouchPin.P0, () => {
-    
-basic.showNumber(3)
-    
-basic.showNumber(2)
-    
-basic.showNumber(1)
-    
-basic.clearScreen()
-    
+    basic.showNumber(3)
+    basic.showNumber(2)
+    basic.showNumber(1)
+    basic.clearScreen()
+    running = false
+    false_start = false
+    basic.pause(1000 + Math.random(2000))
+    if (!(false_start)) {
+        start = input.runningTime()
+        running = true
+        led.stopAnimation()
+        basic.clearScreen()
+        led.plot(Math.random(5), Math.random(5))
+    }
+    })
+input.onPinPressed(TouchPin.P1, () => {
+
+})
 running = false
-    
 false_start = false
-    
-basic.pause(1000 + Math.random(2000))
-    
-if (!(false_start)) {
-        
-start = input.runningTime()
-        
-running = true
-        
-led.stopAnimation()
-        
-basic.clearScreen()
-        
-led.plot(Math.random(5), Math.random(5))
+end = 0
+start = 0
+```
+
+
     }
 })
 ```
