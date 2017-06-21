@@ -1,4 +1,22 @@
 # Code
+### @description code to make the Reaction Time interactive
+
+### ~avatar avatar
+
+Add code to make the Reaction Time interactive.
+
+### ~
+
+## Duration: ~30 minutes
+
+## Step 1: build reaction time game
+
+
+In order for the Reaction Game to follow the rules for determining the player's reaction speed, we need to set variables to store data. Then we will rename the variables to be “start”, “end”, “false_start”, and “running”. Then set the value of the variable “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
+
+. In the code below:
+- the user pressed button ``A`` to switch the servo to 180 degrees (to close the mouth of Milky Monster). 
+- the user pressed button ``B`` to switch the servo to 0 degrees (to open the mouth of Milky Monster). 
 
 Have you ever tried to build the boardgame Operation? Let's try making a game where you control atmospheric temperature!
 
@@ -6,7 +24,7 @@ Experiment 1:
 
 We will register an event handler on the aluminum foil that will execute when two things occur: first, the alligator clip will attach to aluminum foil and GND while the other side of the alligator clip is attached to the aluminum.
 
-Let’s start by adding variables where you can store data. Then rename the variables to be “start”, “end”, “false_start”, and “running”. Then set the value of the variable “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
+
 
 ```blocks
 let start = 0
