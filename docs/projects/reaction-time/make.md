@@ -7,8 +7,8 @@ Turn a piece of cardboard into a reaction time expirment!
 
 ![]
 
-Go to 
+You can checkout the make tutorial on the YouTube channel 
 
-https://youtu.be/DgJ-S0q0EMs
+(https://youtu.be/DgJ-S0q0EMs)
 
 ### ~
