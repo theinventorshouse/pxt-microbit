@@ -9,7 +9,7 @@ Add code to make the Reaction Time interactive.
 
 ## Duration: ~30 minutes
 
-## Step 1: wire up the aluminum foil
+## Step 1: wire up the aluminum foil for Player 1 and Player 2.
 
 Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
 
@@ -17,6 +17,7 @@ https://youtu.be/DgJ-S0q0EMs (https://youtu.be/DgJ-S0q0EMs)
 
 ## Step 2: add variables
 
+The reaction time experiment will be completed by a single player, first..
 
 In order for Reaction Time to follow the rules for determining the player's reaction speed, we need to add variables that will store data. Then we will assign (set) the value of the variables. We want to name the four (4) variables as follows: “start”, “end”, “false_start”, and “running”. Set the value of the variables, “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
 
@@ -154,60 +155,6 @@ let start = 0
 let end = 0
 let false_start = false
 let running = false
-input.onPinPressed(TouchPin.P0, () => {
-    basic.showNumber(3)
-    basic.showNumber(2)
-    basic.showNumber(1)
-    basic.clearScreen()
-    running = false
-    false_start = false
-    basic.pause(1000 + Math.random(2000))
-    if (!(false_start)) {
-        start = input.runningTime()
-        running = true
-        led.stopAnimation()
-        basic.clearScreen()
-        led.plot(Math.random(5), Math.random(5))
-    }
-    })
-input.onPinPressed(TouchPin.P1, () => {
-
-})
-running = false
-false_start = false
-end = 0
-start = 0
-```
-
-
-    }
-})
-```
-
-We want to display one of two images on pin pressed 1. The first image will display only if the player correctly completes the circuit between GND and P1 after the randomly generated LED appears. The seconde image will display only if the player completes a circuit between GND and P1 on a false start. Modify your code so that your code looks like this:  
-
-
-```blocks
-let start = 0
-let end = 0
-let false_start = false
-let running = false
-input.onPinPressed(TouchPin.P0, () => {
-    basic.showNumber(3)
-    basic.showNumber(2)
-    basic.showNumber(1)
-    basic.clearScreen()
-    running = false
-    false_start = false
-    basic.pause(1000 + Math.random(2000))
-    if (!(false_start)) {
-        start = input.runningTime()
-        running = true
-        led.stopAnimation()
-        basic.clearScreen()
-        led.plot(Math.random(5), Math.random(5))
-    }
-})
 input.onPinPressed(TouchPin.P1, () => {
     if (running) {
         running = false
@@ -232,9 +179,92 @@ input.onPinPressed(TouchPin.P1, () => {
             `)
     }
 })
+input.onPinPressed(TouchPin.P0, () => {
+    basic.showNumber(3)
+    basic.showNumber(2)
+    basic.showNumber(1)
+    basic.clearScreen()
+    running = false
+    false_start = false
+    basic.pause(1000 + Math.random(2000))
+    if (!(false_start)) {
+        start = input.runningTime()
+        running = true
+        led.stopAnimation()
+        basic.clearScreen()
+        led.plot(Math.random(5), Math.random(5))
+    }
+})
+running = false
+false_start = false
+end = 0
+start = 0
+
 ```
 
-Experiment 2: Play the game with a peer. Both players share the GND and each player has their own Pin to press. The second Player is represented with P2. You can find the code for this below:
+
+## Step 6: Display images for correct or incorrect reactions. 
+
+We want to display one of two images on pin 1 pressed. The first image displays if the player correctly completes the circuit between GND and P1. A correct reaction occurs to complete the circuit on pin 1 pressed after the randomly generated LED appears on the screen. The seconde image displays if the player completes a circuit between GND and P1 on a false start. A false start occurs when the player completes a circuit on pin 1 pressed before the LED randomly appears on the x, y coordinates. Modify your code so that your code looks like this:  
+
+
+```blocks
+let start = 0
+let end = 0
+let false_start = false
+let running = false
+input.onPinPressed(TouchPin.P1, () => {
+    if (running) {
+        running = false
+        end = input.runningTime()
+        basic.showLeds(`
+            # # . . .
+            # # . . .
+            # # . . .
+            # # . . .
+            # # . . .
+            `)
+        basic.pause(1000)
+        basic.showNumber(end - start)
+    } else {
+        false_start = true
+        basic.showLeds(`
+            . . . . .
+            # . # . .
+            . # . . .
+            # . # . .
+            . . . . .
+            `)
+    }
+})
+input.onPinPressed(TouchPin.P0, () => {
+    basic.showNumber(3)
+    basic.showNumber(2)
+    basic.showNumber(1)
+    basic.clearScreen()
+    running = false
+    false_start = false
+    basic.pause(1000 + Math.random(2000))
+    if (!(false_start)) {
+        start = input.runningTime()
+        running = true
+        led.stopAnimation()
+        basic.clearScreen()
+        led.plot(Math.random(5), Math.random(5))
+    }
+})
+running = false
+false_start = false
+end = 0
+start = 0
+
+```
+
+## Experiment 2: Multiple Players 
+
+The reaction time experiment will be completed by two players. Play the game with a peer. Both players share the GND and each player has their own On Pin Pressed. The second Player is represented on the reaction time with P2. 
+
+You can find the code for this below:
 
 
 ```blocks
