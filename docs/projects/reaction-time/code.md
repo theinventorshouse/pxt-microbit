@@ -3,7 +3,9 @@
 
 ## Step 1: Measuring reaction time.
 
-![](/static/mb/courses/stem/reaction_time_complete.jpg)
+https://youtu.be/DgJ-S0q0EMs
+
+### ~
 
 This lesson uses the Micro:bit to measure the reaction time of a student by completing a circuit on a board. The student will be measuring his/her reaction time in an undistracted environment and a distracted environment.  
 
