@@ -1,23 +1,24 @@
 # Code
 ### @description code to make the Reaction Time interactive
 
-### ~avatar avatar
+YOu will need to get aluminum foil and alligator clips for the coding. 
 
-Add code to make the Reaction Time interactive.
+## Step 1: Measuring reaction time.
 
-### ~
+![](/static/mb/courses/stem/reaction_time_complete.jpg)
 
-## Duration: ~30 minutes
+This lesson uses the Micro:bit to measure the reaction time of a student by completing a circuit on a board. The student will be measuring his/her reaction time in an undistracted environment and a distracted environment.  
 
-## Step 1: wire up the aluminum foil for Player 1 and Player 2.
+Connect each piece of foil to the appropriate pin on the Micro:bit.  Note: For the experiment we will not be utilizing the P2 pin.
 
-Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
+Test the apparatus by putting one hand on the ground pin and one hand on the P0 pin.  This will complete the circuit and start the timer on the Micro:bit after a 3 second count down.
 
-https://youtu.be/DgJ-S0q0EMs 
+Once the timer starts, wait for the LED screen to light up and then press the Ground foil with one hand and and the P1 with the other.  This will connect the circuit and shut off the timer.
 
-## Step 2: add variables
+The Micro:bit will then read off the time in milliseconds from when the timer starts and the circuit is completed.
 
-The reaction time experiment will be completed by a single player, first.
+
+## Step 2: Add Variables
 
 In order for Reaction Time to follow the rules for determining the player's reaction speed, we need to add variables that will store data. Then we will assign (set) the value of the variables. We want to name the four (4) variables as follows: “start”, “end”, “false_start”, and “running”. Set the value of the variables, “start” and “end” to 0. Then set the value of the variable “false_start” and “running” to false. Modify your code so that your code looks like this.
 
@@ -38,7 +39,7 @@ start = 0
 
 ```
 
-## Step 2: on pin pressed
+## Step 3: On Pin Pressed
 
 
 We want to register an event handler that will execute whenever the user holds the GND pin with one hand, and presses pin 0 or pin with the other hand, thus completing a circuit. When you run a script with this function in a web browser, click pins 0 or 1 in the simulator. The game will start on P0 and the P1 will detect when the player visualizes a single LED on the screen. Modify your code so that your code looks like this.
@@ -60,7 +61,7 @@ end = 0
 start = 0
 
 ```
-## Step 2: countdown timer
+## Step 4: countdown timer
 
 We want to code the countdown timer that will be displayed on pin pressed 0. We will insert three show number blocks to visually display the countdown: 3 2 1. Then we want to add a Basic block clear screen to clear the numbers from the screen. Modify your code so that your code looks like this:
 
@@ -87,7 +88,7 @@ start = 0
 
 * click Download to see if the code works as expected.
 
-## Step 3: boolean variables
+## Step 5: boolean variables
 
 We want to set variables, running and set false start to false. This occurs on pin 0 pressed. Those  blocks represent the true and false Boolean values. A Boolean has one of two possible values: true; false.
 
@@ -117,7 +118,7 @@ start = 0
 ```
 
 
-## Step 4: begin reaction time experiment randomly 
+## Step 6: begin reaction time experiment randomly 
 
 We want to set a random pause before the reaction time experiment begins. Modify your code so that your code looks like this:
 
@@ -145,7 +146,7 @@ start = 0
 
 ```
 
-## Step 5: begin reaction time experiment randomly 
+## Step 7: begin reaction time experiment randomly 
 
 
 We want to introduce the reaction time experiment if there is not a false start on pin 0 pressed. Reaction time will randomly plot a LED on the x and y coordinates. Modify your code so that your code looks like this:
@@ -203,7 +204,7 @@ start = 0
 ```
 
 
-## Step 6: Display images for correct or incorrect reactions. 
+## Step 8: Good Reaction or False Start. 
 
 We want to display one of two images on pin 1 pressed. The first image displays if the player correctly completes the circuit between GND and P1. A correct reaction occurs to complete the circuit on pin 1 pressed after the randomly generated LED appears on the screen. The seconde image displays if the player completes a circuit between GND and P1 on a false start. A false start occurs when the player completes a circuit on pin 1 pressed before the LED randomly appears on the x, y coordinates. Modify your code so that your code looks like this:  
 
@@ -260,9 +261,9 @@ start = 0
 
 ```
 
-## Experiment 2: Multiple Players 
+## Extension 
 
-The reaction time experiment will be completed by two players. Play the game with a peer. Both players share the GND and each player has their own On Pin Pressed. The second Player is represented on the reaction time with P2. 
+After the students have finished their experiments.  Have them play the game with a friend (using the P2 pin) and have competitons to see who is the quickest on the draw. 
 
 You can find the code for this below:
 
