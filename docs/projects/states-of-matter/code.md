@@ -1,24 +1,16 @@
 # Code
-### @description code to make a representation for states of matter
+### @description code to detect States of Matter 
 
-### ~avatar avatar
+## Step 1: Make temperature simulation
 
-Add code to detect the visualization of States of Matter.
+Have you ever tried to represent the states of matter? Let's try to visually represent various states of matter based on atmospheric temperatures!
 
+ ### ~button /projects/states-of-matter/make
+Make
 ### ~
 
-## Duration: ~30 minutes
 
-## Step 1: wire up the aluminum foil for detecting states of matter.
-
-Follow the instructions to connect the BBC micro:bit to aluminum foil and alligator clips.
-
-(https://youtu.be/Hdsy93yaQC0)
-
-Have you ever tried to represent the states of matter? Let's try make an experiment that visually represents various states of matter based on atmospheric temperatures!
-
-
-## Step 2: Add variables.
+## Step 2: Variables.
 
 
 In order for States of Matter to follow the rules for determining the  atmospheric temperature, we need to add variables that will store data. Then we will assign (set) the value of the variables. We want to name the two (2) variables as follows: “atmos_temperature” and “temperature”. Set the value of the variables to 100.  Modify your code so that your code looks like this.
@@ -30,17 +22,13 @@ let atmos_temperature = 100
 ```
 
 
-## Step 3: Detect a Solid.
+## Step 3: Detect a solid.
 
 We want to detect a solid for the atmospheric temperature. On Pin 2 Pressed, you want to represent an atmospheric temperature of 0 and scroll the message SOLID. We want to set atmos_temperature to 0 and show string as a Solid. Modify your code so that your code looks like this:
 
 ```blocks
-let atmos_temperature = 0
 let temperature = 0
-input.onGesture(Gesture.Shake, () => {
-    temperature += 50
-    basic.showIcon(IconNames.Triangle)
-})
+let atmos_temperature = 0
 input.onPinPressed(TouchPin.P2, () => {
     atmos_temperature = 0
     basic.showString("SOLID")
@@ -48,9 +36,10 @@ input.onPinPressed(TouchPin.P2, () => {
 atmos_temperature = 100
 temperature = 100
 
+
 ```
 
-## Step 4: Detect a Liquid.
+## Step 4: Detect a liquid.
 
 We want to detect a liquid for the atmospheric temperature. On Pin 1 Pressed, you want to represent an atmospheric temperature of 80 and scroll the message LIQUID. We want to set atmos_temperature to 80 and show string as a liquid. Modify your code so that your code looks like this:
 
@@ -73,7 +62,7 @@ temperature = 100
 * click *Download* to see if the code works as expected.
 
 
-## Step 5: Detect a Gas.
+## Step 5: Detect a gas.
 
 We want to detect a liquid for the atmospheric temperature. On Pin 1 Pressed, you want to represent an atmospheric temperature of 80 and scroll the message LIQUID. We want to set atmos_temperature to 80 and show string as a liquid. Modify your code so that your code looks like this:
 

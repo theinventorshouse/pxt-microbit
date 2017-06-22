@@ -7,6 +7,10 @@ Turn a piece of cardboard into a detector of temperature and atmospheric tempera
 
 ### ~
 
+https://youtu.be/Hdsy93yaQC0
+
+### ~
+
 * Fold the foil squares and place them around the cardboard.
 *  Connect each piece of foil to the appropriate pin on the Micro:bit.
 
