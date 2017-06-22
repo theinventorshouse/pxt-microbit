@@ -1,30 +1,20 @@
 # Make
-### @description Building the reaction time experiment.
+### @description Building the states of matter experiment.
 
 ### ~avatar avatar
 
 Turn a piece of cardboard into a detector of temperature and atmospheric temperature!
 
 
-![](\static\mb\courses\stem\forms_of_matter.jpg)
-
-
-## Duration: ~45 minutes
-
-## Materials
-#### Recycled
-* Cardboard (large) 
-* Aluminum Foil
-* Permanent Marker (Red and Black)
-
-### Electronics
-* 1 @boardname@, battery holder and 2 AAA batteries
-* 4 Crocodile clips
+![](static/mb/courses/stem/forms-of-matter-complete.jpg)
 
 ### ~
 
-You can checkout the make tutorial on the YouTube channel 
+* Fold the foil squares and place them around the cardboard.
+*  Connect each piece of foil to the appropriate pin on the Micro:bit.
 
-https://youtu.be/Hdsy93yaQC0
+That's it!
 
+### ~button /projects/states-of-matter/code
+Code
 ### ~
