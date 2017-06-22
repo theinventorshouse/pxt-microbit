@@ -10,6 +10,6 @@ https://youtu.be/DgJ-S0q0EMs
 That's it!
 
 ### ~button /projects/reaction-time/code
-NEXT: Code
+Code
 ### ~
 
