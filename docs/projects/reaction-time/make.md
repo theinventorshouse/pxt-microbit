@@ -3,7 +3,7 @@
 
 ### ~avatar avatar
 
-Turn a piece of cardboard into a reaction time expirment!
+Turn a piece of cardboard into a reaction time expirement!
 
 ### ~
 
@@ -23,6 +23,10 @@ Turn a piece of cardboard into a reaction time expirment!
 
 ## Activities
 
+
+### ~button /projects/reaction-time/code
+NEXT: Code
+### ~
 
 You can checkout the make tutorial on the YouTube channel 
 
