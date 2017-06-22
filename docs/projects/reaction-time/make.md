@@ -1,33 +1,16 @@
-# Reaction TIme
+# Make
 ### @description Building the reaction time experiment.
 
-### ~avatar avatar
 
-Turn a piece of cardboard into a reaction time expirement!
+https://youtu.be/DgJ-S0q0EMs
 
-### ~
+* Cut a square in the bottom of the cereal box and tape the Micro:bit to it so that the the LED array can be seen when looking down into the box from the top. 
+* Paste the foil on either side of the box and connect with wires and croc clips to P0 (top left-hand side), P1 bottom left-hand side and ground (right hand side) pins.
+* 
 
-![](\static\mb\courses\stem\reaction_time.JPG)
-
-
-
-## Duration: ~45 minutes
-
-## Materials
-* Cardboard (large) 
-* Aluminum Foil
-* Permanent Marker (Red and Black)
-* 1 @boardname@, battery holder and 2 AAA batteries
-* 4 Crocodile clips
-
-
-## Activities
-
+That's it!
 
 ### ~button /projects/reaction-time/code
 NEXT: Code
 ### ~
 
-You can checkout the make tutorial on the YouTube channel 
-
-https://youtu.be/DgJ-S0q0EMs
