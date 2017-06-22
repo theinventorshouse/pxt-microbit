@@ -5,7 +5,6 @@
 
 Turn a piece of cardboard into a detector of temperature and atmospheric temperature!
 
-
 ![](static/mb/courses/stem/forms-of-matter-complete.jpg)
 
 ### ~
