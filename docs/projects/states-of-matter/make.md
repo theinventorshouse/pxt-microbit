@@ -5,8 +5,6 @@
 
 Turn a piece of cardboard into a detector of temperature and atmospheric temperature!
 
-![](static/mb/courses/stem/forms-of-matter-complete.jpg)
-
 ### ~
 
 * Fold the foil squares and place them around the cardboard.
