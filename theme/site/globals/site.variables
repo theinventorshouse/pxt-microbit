@@ -22,7 +22,7 @@
 /* Microbit.org colors */
 @orange: #ff8b27;
 @purple: #6633cc;
-@green: #00ED00;
+@green: #278728;
 
 @pageBackground: #fff;
 
