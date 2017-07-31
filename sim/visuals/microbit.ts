@@ -136,6 +136,9 @@ namespace pxsim.visuals {
         .sim-wireframe .sim-board {
             stroke-width: 2px;
         }
+        *:focus {
+            outline: 2px solid white;
+        }
     `;
     const MB_HIGHCONTRAST = `
 .sim-led {
