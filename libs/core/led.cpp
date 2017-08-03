@@ -40,7 +40,7 @@ namespace led {
         // enable greyscale as needed
         if (brightness != 0 && brightness != 0xff && uBit.display.getDisplayMode() != DISPLAY_MODE_GREYSCALE)
             uBit.display.setDisplayMode(DISPLAY_MODE_GREYSCALE);
-        uBit.display.image.setPixelValue(x, y, brightness)
+        uBit.display.image.setPixelValue(x, y, brightness);
     }
 
     /**
