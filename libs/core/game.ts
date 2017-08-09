@@ -32,8 +32,9 @@ namespace game {
     let _countdownPause: number = 0;
     let _level: number = 1;
     let _gameId: number = 0;
-    let img: Image;
-    let sprites: LedSprite[];
+    let _img: Image;
+    let _sprites: LedSprite[];
+    let _paused: boolean = false;
 
     /**
      * Creates a new LED sprite pointing to the right.
@@ -59,7 +60,7 @@ namespace game {
     }
 
     /**
-     * Adds points to the current score
+     * Adds points to the current score and shows an animation
      * @param points amount of points to change, eg: 1
      */
     //% weight=10 help=game/add-score
@@ -67,18 +68,19 @@ namespace game {
     //% parts="ledmatrix"
     export function addScore(points: number): void {
         setScore(_score + points);
-        control.inBackground(() => {
-            led.stopAnimation();
-            basic.showAnimation(`0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0
-0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0
-0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0`, 20);
-        });
+        if (!_paused)
+            control.inBackground(() => {
+                led.stopAnimation();
+                basic.showAnimation(`0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0
+    0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+    0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+    0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 0`, 20);
+            });
     }
 
     /**
-     * Starts a game countdown timer
+     * Shows an animation, then starts a game countdown timer, which causes Game Over when it reaches 0
      * @param ms countdown duration in milliseconds, eg: 10000
      */
     //% weight=9 help=game/start-countdown
@@ -94,6 +96,7 @@ namespace game {
             _countdownPause = Math.max(500, ms);
             _startTime = -1;
             _endTime = input.runningTime() + _countdownPause;
+            _paused = false;
             control.inBackground(() => {
                 basic.pause(_countdownPause);
                 gameOver();
@@ -102,7 +105,7 @@ namespace game {
     }
 
     /**
-     * Displays a game over animation.
+     * Displays a game over animation and the score.
      */
     //% weight=8 help=game/game-over
     //% blockId=game_game_over block="game over"
@@ -201,14 +204,15 @@ namespace game {
     //% parts="ledmatrix"
     export function removeLife(life: number): void {
         setLife(_life - life);
-        control.inBackground(() => {
-            led.stopAnimation();
-            basic.showAnimation(`1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0
+        if (!_paused)
+            control.inBackground(() => {
+                led.stopAnimation();
+                basic.showAnimation(`1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0
 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0
 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0
 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0`, 40);
-        });
+            });
     }
 
     /**
@@ -263,8 +267,36 @@ namespace game {
      * Indicates if the game is display the game over sequence.
      */
     export function isGameOver(): boolean {
-        let over: boolean;
         return _isGameOver;
+    }
+
+    /**
+     * Indicates if the game rendering is paused to allow other animations
+     */
+    //%
+    export function isPaused(): boolean {
+        return _paused;
+    }
+
+    /**
+     * Pauses the game rendering engine to allow other animations
+     */
+    //% blockId=game_pause block="pause"
+    //% advanced=true blockGap=8 help=game/pause
+    export function pause(): void {
+        plot()
+        _paused = true;
+    }
+
+
+    /**
+     * Resumes the game rendering engine
+     */
+    //% blockId=game_resume block="resume"
+    //% advanced=true blockGap=8 help=game/resumeP
+    export function resume(): void {
+        _paused = false;
+        plot();
     }
 
     /**
@@ -292,19 +324,21 @@ namespace game {
         private _dir: number;
         private _brightness: number;
         private _blink: number;
+        private _enabled: boolean;
 
         constructor(x: number, y: number) {
             this._x = Math.clamp(0, 4, x);
             this._y = Math.clamp(0, 4, y);
             this._dir = 90;
             this._brightness = 255;
+            this._enabled = true;
             init();
-            sprites.push(this);
+            _sprites.push(this);
             plot();
         }
 
         /**
-         * Move a certain number of LEDs
+         * Move a certain number of LEDs in the current direction
          * @param this the sprite to move
          * @param leds number of leds to move, eg: 1, -1
          */
@@ -354,7 +388,7 @@ namespace game {
         }
 
         /**
-         * If touching the edge of the stage, then bounce away.
+         * If touching the edge of the stage and facing towards it, then turn away.
          * @param this TODO
          */
         //% weight=18
@@ -566,14 +600,14 @@ namespace game {
         }
 
         /**
-         * Reports true if sprite is touching specified sprite
+         * Reports true if sprite has the same position as specified sprite
          * @param this TODO
          * @param other TODO
          */
         //% weight=20
         //% blockId=game_sprite_touching_sprite block="%sprite|touching %other|?" blockGap=8
         public isTouching(other: LedSprite): boolean {
-            return this._x == other._x && this._y == other._y;
+            return this._enabled && other._enabled && this._x == other._x && this._y == other._y;
         }
 
         /**
@@ -642,13 +676,14 @@ namespace game {
         }
 
         /**
-         * Deletes the sprite from the game engine. All further operation of the sprite will not have any effect.
+         * Deletes the sprite from the game engine. The sprite will no longer appear on the screen or interact with other sprites.
          * @param this sprite to delete
          */
         //% weight=59
         //% blockId="game_delete_sprite" block="delete %this"
         public delete(): void {
-            if (sprites.removeElement(this))
+            this._enabled = false;
+            if (_sprites.removeElement(this))
                 plot();
         }
 
@@ -689,22 +724,21 @@ namespace game {
                     r = (now / ps._blink) % 2;
                 }
                 if (r == 0) {
-                    img.setPixelBrightness(ps._x, ps._y, img.pixelBrightness(ps._x, ps._y) + ps._brightness);
+                    _img.setPixelBrightness(ps._x, ps._y, _img.pixelBrightness(ps._x, ps._y) + ps._brightness);
                 }
             }
         }
     }
 
     function init(): void {
-        if (img == null) {
-            img = images.createImage(
+        if (_img == null) {
+            _img = images.createImage(
                 `0 0 0 0 0
 0 0 0 0 0
 0 0 0 0 0
 0 0 0 0 0
 0 0 0 0 0`);
-            sprites = (<LedSprite[]>[]);
-            led.setDisplayMode(DisplayMode.Greyscale);
+            _sprites = (<LedSprite[]>[]);
             basic.forever(() => {
                 basic.pause(30);
                 plot();
@@ -720,15 +754,19 @@ namespace game {
      */
     //% parts="ledmatrix"
     function plot(): void {
-        if (game.isGameOver()) {
+        if (game.isGameOver() || game.isPaused() || !_img) {
             return;
         }
+        // ensure greyscale mode
+        if (led.displayMode() != DisplayMode.Greyscale)
+            led.setDisplayMode(DisplayMode.Greyscale);
+        // render sprites
         let now = input.runningTime();
-        img.clear();
-        for (let i = 0; i < sprites.length; i++) {
-            sprites[i]._plot(now);
+        _img.clear();
+        for (let i = 0; i < _sprites.length; i++) {
+            _sprites[i]._plot(now);
         }
-        img.plotImage(0);
+        _img.plotImage(0);
     }
 
     /**
