@@ -17,22 +17,16 @@
 @red: #EF767A;
 @pink: #F46197;
 @yellow: #FDE74C;
-@grey:#95a5a6;
+@grey: #95a5a6;
+@green: #278728;
 
 @greenTextColor  : #126B1B;
 
 /* Microbit.org colors */
 @orange: #ff8b27;
 @purple: #6633cc;
-@green: #278728;
 
 @pageBackground: #fff;
-
-/*-------------------
-     Neutral Text
---------------------*/
-
-@lightTextColor              : rgba(0, 0, 0, 0.68);
 
 /*******************************
          PXT Overrides
