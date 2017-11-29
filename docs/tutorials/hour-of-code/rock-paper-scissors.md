@@ -44,7 +44,7 @@ input.onGesture(Gesture.Shake, () => {
 
 ## Step 4
 
-In the ``if`` block, place a ``||basic:show leds||`` block that shows a
+In the ``||logic:if||`` block, place a ``||basic:show leds||`` block that shows a
 picture of a piece of paper.
 
 ```blocks
@@ -117,7 +117,7 @@ input.onGesture(Gesture.Shake, () => {
 
 ## Step 7
 
-Add a ``||basic:show leds||`` block with a picture of scissors to the ``else`` part.
+Add a ``||basic:show leds||`` block with a picture of scissors to the ``||logic:else||`` part.
 
 You don't need to check if `tool` is `2` because `2` is the only number left out of `0`, `1`, and `2`.
 That's why you can use an ``||logic:else||`` instead of an ``||logic:else if||``.
