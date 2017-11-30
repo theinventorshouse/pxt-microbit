@@ -5,7 +5,7 @@
 We want the @boardname@ to choose rock, paper, or scissors when you shake it.
 Place a ``||input:on shake||`` block so when you click the **SHAKE** spot in the simulator, it will run part of a program.
 
-```blocks
+```block
 input.onGesture(Gesture.Shake, () => {
     
 })
@@ -19,7 +19,7 @@ When you press **SHAKE**, it should pick a random number from `0` to `2`
 and store it in the variable `tool`. (This variable is named `tool` because 
 rock, paper, and scissors are the tools you use to challenge your friends!)
 
-```blocks
+```block
 let tool = 0;
 input.onGesture(Gesture.Shake, () => {
     tool = Math.random(3)
@@ -33,10 +33,10 @@ In a later step, each of the possible numbers (`0`, `1`, or `2`) is matched to i
 Place an ``||logic:if||`` block under the ``||math:pick random||`` and
 check whether ``tool`` is equal to ``0``.
 
-```blocks
+```block
 let tool = 0;
 input.onGesture(Gesture.Shake, () => {
-    let tool = Math.random(3)
+    tool = Math.random(3)
     if (tool == 0) {
     }
 })
@@ -47,10 +47,10 @@ input.onGesture(Gesture.Shake, () => {
 In the ``||logic:if||`` block, place a ``||basic:show leds||`` block that shows a
 picture of a piece of paper.
 
-```blocks
+```block
 let tool = 0;
 input.onGesture(Gesture.Shake, () => {
-    let tool = Math.random(3)
+    tool = Math.random(3)
     if (tool == 0) {
         basic.showLeds(`
             # # # # #
@@ -70,10 +70,10 @@ is equal to ``1``.
 
 Click on the gearwheel icon to open up the ``||logic:if||`` editor; then drag and drop an ``||logic:else if||`` block in the ``||logic:if||`` editor.
 
-```blocks
+```block
 let tool = 0;
 input.onGesture(Gesture.Shake, () => {
-    let tool = Math.random(3)
+    tool = Math.random(3)
     if (tool == 0) {
         basic.showLeds(`
             # # # # #
@@ -91,10 +91,10 @@ input.onGesture(Gesture.Shake, () => {
 
 Place a ``||basic:show leds||`` block under the ``||logic:else if||`` and draw a **rock** image on the screen.
 
-```blocks
+```block
 let tool = 0;
 input.onGesture(Gesture.Shake, () => {
-    let tool = Math.random(3)
+    tool = Math.random(3)
     if (tool == 0) {
         basic.showLeds(`
             # # # # #
@@ -122,10 +122,10 @@ Add a ``||basic:show leds||`` block with a picture of scissors to the ``||logic:
 You don't need to check if `tool` is `2` because `2` is the only number left out of `0`, `1`, and `2`.
 That's why you can use an ``||logic:else||`` instead of an ``||logic:else if||``.
 
-```blocks
+```block
 let tool = 0;
 input.onGesture(Gesture.Shake, () => {
-    let tool = Math.random(3)
+    tool = Math.random(3)
     if (tool == 0) {
         basic.showLeds(`
             # # # # #
@@ -152,7 +152,6 @@ input.onGesture(Gesture.Shake, () => {
             `)
     }
 })
-
 ```
 
 ## Step 8
