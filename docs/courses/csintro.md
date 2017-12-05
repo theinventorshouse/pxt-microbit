@@ -1,6 +1,6 @@
 # Introducción a CS
 
-#Un curso de Introducción a la Informática de 14 semanas.
+# Un curso de Introducción a la Informática de 14 semanas.
 
 Este curso está dirigido a los los estudiantes de secundaria y a su ves los estudiantes que concluiran la escuela  (edades de 11 a 14 años).También está pensado para profesores que pueden no tener experiencia en informática o que pueden impartir un curso de "Introducción a la informática" por primera vez.
 
@@ -48,7 +48,7 @@ Proyecto (60-120 min): un aviso para un proyecto original que creará cada estud
 4. [Condicionales](/courses/csintro/conditionals)
 5. [Interacción](/courses/csintro/iteration) 
 6. [Revisión/Mini-Proyecto](/courses/csintro/miniproject)
-7. [sistema de cordenadas](/courses/csintro/coordinates)
+7. [Sistema de cordenadas](/courses/csintro/coordinates)
 8. [Booleanos](/courses/csintro/booleans)
 9. [Bits, bytes, y binarios](/courses/csintro/binary)
 10. [Radio](/courses/csintro/radio)
