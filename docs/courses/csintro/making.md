@@ -1,4 +1,4 @@
-# Haciendo con micro:bit
+# Creando con micro:bit
 
 Esta Lección introduce el micro: bit como una pieza de hardware que tiene un tamaño y peso específico, y generalmente debe ser soportado e incorporado como un componente esencial de un artefacto tangible. Concéntrese en incorporar el micro: bit físico en una actividad de creación básica.
 
