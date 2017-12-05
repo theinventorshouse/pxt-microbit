@@ -1,27 +1,25 @@
-# Making with micro:bit
+# Haciendo con micro:bit
 
-This Lesson introduces the micro:bit as a piece of hardware that has a specific size and weight, and
-generally must be supported and incorporated as an essential component of a tangible artifact. Focus
-on incorporating the physical micro:bit into a basic making activity.
+Esta Lección introduce el micro: bit como una pieza de hardware que tiene un tamaño y peso específico, y generalmente debe ser soportado e incorporado como un componente esencial de un artefacto tangible. Concéntrese en incorporar el micro: bit físico en una actividad de creación básica.
 
-![micro:bit board](/static/courses/csintro/making/microbit-board.png)
+![micro:bit placa](/static/courses/csintro/making/microbit-board.png)
 
-## Lesson objectives 
-Students will...
+## Objetivos de la lección 
+Los estudiantes seran capaces ...
 
-* Exercise creativity and resourcefulness by coming up with ideas for using simple household materials to accommodate the micro:bit’s size and weight in many different ways.
-* Test and iterate using different materials and sizes in order to create an optimal design to house the micro:bit and battery pack
-* Learn how to download programs and move them to the micro:bit file to run on the micro:bit.
-* Use the design thinking process to develop an understanding for a problem or user need.
-* Apply their understanding in a creative way by making a “micro:pet” creature. 
+* Ejercitar la creatividad y el ingenio al idear a base de materiales domésticos sencillos para acomodar el tamaño de la micro:bit's de muchas maneras diferentes.
+* Probar e interactuar usando diferentes materiales y tamaños para crear un diseño óptimo para conter el micro: bit y el paquete de baterias
+* Descargar programas y moverlos al archivo micro: bit para ejecutarlo en micro: bit..
+* Usar pensamiento critico  para desarrollar un diseño y a su vez comprensión de un problema o necesidad del usuario.
+* Aplicar sus conociomintos de forma creativa, realizando una micro mascota. 
 	
-## Lesson plan
+## Plan de estudios 
 
-* [**Introduction**: The micro:bit is for making](/courses/csintro/making/introduction)
-* [**Unplugged**: Design Thinking](/courses/csintro/making/unplugged)
-* [**Activity**: MakeCode download](/courses/csintro/making/activity)
-* [**Project**: micro:pet (including mods and rubric)](/courses/csintro/making/project)
+* [**Introducción**: El micro:bit es para crear](/courses/csintro/making/introduction)
+* [**Unplugged**: pensaminto de diseño](/courses/csintro/making/unplugged)
+* [**Actividad**: descarga de MakeCode ](/courses/csintro/making/activity)
+* [**Proyecto**: micro:mascota (incluyendo modificaciones)](/courses/csintro/making/project)
 
-## Related standards
+## Estándares relacionados
 
-[Targeted CSTA standards](/courses/csintro/making/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/making/standards)
