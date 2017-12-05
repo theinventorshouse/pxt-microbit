@@ -16,7 +16,7 @@ Los estudiantes seran capaces ...
 ## Plan de estudios 
 
 * [**Introducción**: El micro:bit es para crear](/courses/csintro/making/introduction)
-* [**Unplugged**: pensaminto de diseño](/courses/csintro/making/unplugged)
+* [**Plantemiento**: pensaminto de diseño](/courses/csintro/making/unplugged)
 * [**Actividad**: descarga de MakeCode ](/courses/csintro/making/activity)
 * [**Proyecto**: micro:mascota (incluyendo modificaciones)](/courses/csintro/making/project)
 
