@@ -1,22 +1,22 @@
-# Algorithms
+# Algoritmos
 
-This lesson introduces a conceptual framework for thinking of a computing device as something that uses code to process one or more inputs and send them to an output(s).
+Esta lección presenta un marco conceptual para pensar en un dispositivo informático como algo que utiliza código para procesar una o más entradas y enviarlas a una salida (s).
 
-## Lesson objectives
-Students will...
+## objetivos de la lección
+Los estudiantes seran capaces de...
 
-* Understand the four components that make up a computer and their functions.
-* Understand that the micro:bit takes input, and after processing the input, produces output.
-* Learn the variety of different types of information the micro:bit takes in as input.
-* Apply this knowledge by creating a micro:bit program that takes input and produces an output.
+* Comprender las cuatro paetes que componen una computadora y sus funciones..
+* Comprender toma entrada, y después de procesar la entrada, produce salida..
+* Aprender la variedad de diferentes tipos de información que micro: bit toma como entrada.
+* Aplicar este conocimiento creando un programa en micro: bit que tome una entrada y asu vez haga una salida.
 
 ## Lesson plan
 
-1. [**Overview**: What is a computer and micro:bit hardware](/courses/csintro/algorithms/overview)
-2. [**Unplugged**: What's your function?](/courses/csintro/algorithms/unplugged)
-3. [**Activity**: Happy face, sad face](/courses/csintro/algorithms/activity)
-4. [**Project**: Fidget cube](/courses/csintro/algorithms/project)
+1. [**Descripción**: Que es una computadora? y el hadwere de micro](/courses/csintro/algorithms/overview)
+2. [**Desconectado**: Cual es su función?](/courses/csintro/algorithms/unplugged)
+3. [**Actividad**: cara feliz, cara triste](/courses/csintro/algorithms/activity)
+4. [**Proyecto**: Fidget cubo](/courses/csintro/algorithms/project)
 
 ## Related standards
 
-[Targeted CSTA standards](/courses/csintro/algorithms/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/algorithms/standards)
