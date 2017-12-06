@@ -1,28 +1,28 @@
 # Variables
 
-![Variable value](/static/courses/csintro/variables/cover.jpg)
+![Valor de una Variable ](/static/courses/csintro/variables/cover.jpg)
 
-This lesson introduces the use of variables to store data or the results of mathematical operations.  Students will practice giving variables unique and meaningful names. We will also introduce the basic mathematical operations for adding, subtracting, multiplying, and dividing variables.
+Esta lección introduce el uso de variables para almacenar datos o los resultados de operaciones matemáticas. Los estudiantes practicarán dando a las variables nombres únicos y significativos. También presentaremos las operaciones matemáticas básicas para sumar, restar, multiplicar y dividir variables.
 
-## Lesson Objectives 
+## Objetivos de la lección
 
-Students will...
+Los estudiantes seran capaces de ...
 
-* Understand what variables are and why and when to use them in a program.
-* Learn how to create a variable, set the variable to an initial value, and change the value of the variable within a micro:bit program.
-* Learn how to create meaningful and understandable variable names.
-* Understand that a variable holds one value at a time.
-* Understand that when you update or change the value held by a variable, the new value replaces the previous value.
-* Learn how to use the basic mathematical blocks for adding, subtracting, multiplying, and dividing variables.
-* Apply the above knowledge and skills to create a unique program that uses variables as an integral part of the program.
+* Comprender qué variables son y por qué y cuándo usarlas en un programa.
+* Aprender a crear una variable, establezca la variable a un valor inicial y cambie el valor de la variable dentro de un programa micro:bit.
+* Aprender a crear nombres de variables significativos y comprensibles.
+* Comprender que una variable contiene un valor a la vez.
+* Comprender que cuando actualiza o cambia el valor que tiene una variable, el nuevo valor reemplaza el valor anterior.
+* Aprender a usar los bloques matemáticos básicos para agregar, restar, multiplicar y dividir variables.
+* Aplicar los conocimientos y habilidades anteriores para crear un programa único que utilice variables como parte integral del programa.
 
 ## Lesson plan
 
-1. [**Overview**: Variables in Daily Life](/courses/csintro/variables/overview)
-2. [**Unplugged**: Rock Paper Scissors](/courses/csintro/variables/unplugged)
-3. [**Activity**: Make a Game Scorekeeper](/courses/csintro/variables/activity)
-4. [**Project**: Everything Counts](/courses/csintro/variables/project)
+1. [**Descripión**: Variables en la vida diaria](/courses/csintro/variables/overview)
+2. [**Desconectado**: piedra,pappel y tijeras](/courses/csintro/variables/unplugged)
+3. [**Actividad**:hacer un marcador de juego ](/courses/csintro/variables/activity)
+4. [**Proyecto**: todo cuenta](/courses/csintro/variables/project)
 
 ## Related standards
 
-[Targeted CSTA standards](/courses/csintro/variables/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/variables/standards)
