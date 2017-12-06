@@ -1,25 +1,24 @@
-# Conditional statements
+# Declaraciones condicionales
 
-![Board game example](/static/courses/csintro/conditionals/cover.jpg)
+![Teclado de juego](/static/courses/csintro/conditionals/cover.jpg)
 
-This lesson introduces the Logic blocks such as 'If...then' and 'If...then...else'.
-Students practice skills of creativity, problem-solving, and collaboration.
+Esta lección presenta los bloques lógicos como 'If ... then' y 'If ... then ... else'. Los estudiantes practican habilidades de creatividad, resolución de problemas y colaboración.
 
-## Lesson objectives
-Students will...
+## Objetivos de la lección
+Los estudiantes seran capaces de...
 
-* Understand what conditional statements are, and why and when to use them in a program.
-* Learn how to use the Logic blocks 'If...then' and 'If…then...else'.
-* Practice using the Logic blocks so different conditions yield specified outcomes.
-* Demonstrate understanding and apply skill by collaborating with classmates to create a game that uses a micro:bit and a program that correctly and effectively uses conditionals. 
+* Comprender qué son los enunciados condicionales, y por qué y cuándo usarlos en un programa.
+* Aprender a usar los bloques lógicos 'If ... then' y 'If ... then ... else'.
+* Practicar el uso de los bloques de lógica para que las diferentes condiciones produzcan resultados específicos.
+* Demostrar comprensión y aplicar habilidades colaborando con compañeros de clase para crear un juego que utilice un micro: bit y un programa que use condicionalmente de manera correcta y efectiva. 
 
 ## Lesson plan
 
-1. [**Overview**: Conditional statements](/courses/csintro/conditionals/overview)
-2. [**Unplugged**: Red light, green light](/courses/csintro/conditionals/unplugged)
-3. [**Activity**: Rock, paper, scissors](/courses/csintro/conditionals/activity)
-4. [**Project**: Board game](/courses/csintro/conditionals/project)
+1. [**Descripción general**:declaraciones condicionales](/courses/csintro/conditionals/overview)
+2. [**Desenchufado**: luz roja, luz verde](/courses/csintro/conditionals/unplugged)
+3. [**Actividad**: Piedra, papel, tijeras](/courses/csintro/conditionals/activity)
+4. [**Proyecto**:  juego de mesa](/courses/csintro/conditionals/project)
 
-## Related standards
+## Estándares relacionados
 
-[Targeted CSTA standards](/courses/csintro/conditionals/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/conditionals/standards)
