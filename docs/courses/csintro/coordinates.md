@@ -1,36 +1,36 @@
-# Coordinate grid and LEDs
+# Cuadricula de cordenadas y LED
 
-![Sample Heart Simulator](/static/courses/csintro/coordinates/cover.png)
+![corazon simuilado ](/static/courses/csintro/coordinates/cover.png)
 
-This lesson introduces the use of coordinates to store data or the results of mathematical operations. It gives students practice programming for the LEDs of the micro:bit screen using coordinates, and introduces the basic game blocks of MakeCode.
+Esta lección introduce el uso de coordenadas para almacenar datos o los resultados de operaciones matemáticas. Le da a los estudiantes la práctica de programación para los LED de la pantalla micro: bit utilizando coordenadas, e introduce los bloques de juegos básicos de MakeCode.
 
-## Lesson objectives
 
-Students will...
-* Understand that the 5 x 5 grid of LEDs on the micro:bit represents a coordinate grid with the origin (0,0) in the top left corner.
-* Understand that the values of the x coordinates range from 0 through four and increase from left to right.
-* Understand that the values of the y coordinates range from 0 through four and increase from top to bottom.
-* Learn how to refer to an individual LED by its **X** and **Y** coordinates.
-* Learn how to plot (turn on) and unplot (turn off) individual LEDs and how to toggle between these two states.
-* Learn how to check the current on or off status of an individual LED as well as check and set the brightness level.
-* Apply the above knowledge and skills to create a unique program that uses coordinates as an integral part of the program.
+## Objetivos de la lección 
 
-## Lesson structure
+los estudiantes serán capaces ..
+* Comprender que la cuadrícula 5x5 de los LED en el micro: bit representa una cuadrícula de coordenadas con el origen (0,0) en la esquina superior izquierda.
+* Comprender que los valores de las coordenadas x van de 0 a cuatro y aumentan de izquierda a derecha..
+* Comprender que los valores de las coordenadas y van de 0 a cuatro y aumentan de arriba a abajo..
+* Aprender cómo hacer referencia a un LED individual por sus coordenadas X e Y..
+* Aprender a trazar (encender) y des-trazar (apagar) LED individuales y cómo alternar entre estos dos estados.
+* Aprender a verificar el estado actual de encendido o apagado de un LED individual, así como a verificar y configurar el nivel de brillo.
+* Aplicar los conocimientos y habilidades anteriores para crear un programa único que use coordenadas como parte integral del programa.
 
-* Introduction: Coordinate Grid
-* Unplugged Activity: Battleship
-* micro:bit Activities: Animation and Patterns
-* Project: Screensaver or Game
-* Assessment: Rubric 
-* Standards: Listed
+## Estructura de la lección 
+
+* Introducción: Cuadrícula de coordenadas
+* Actividad Desconectada: Acorazado
+* Actividades de micro: bit: animación y patrones
+* Proyecto: salvapantallas o juego
+* Evaluación: Rúbrica 
+* Estándares: enumerados
 
 ## Lesson plan
 
-1. [**Overview**: Coordinate grid and LEDs](/courses/csintro/coordinates/overview)
-2. [**Unplugged**: Battleship](/courses/csintro/coordinates/unplugged)
-3. [**Activity**: Animation and patterns](/courses/csintro/coordinates/activity)
-4. [**Project**: Screensaver or game](/courses/csintro/coordinates/project)
+1. [**Descripción genera**:cuadrícula de coordenadas y LED ](/courses/csintro/coordinates/overview)
+2. [**Desconectado**: Acorazado](/courses/csintro/coordinates/unplugged)
+3. [**Actividad**: animación y patrones](/courses/csintro/coordinates/activity)
+4. [**Proyecto**: salvapantallas o juego](/courses/csintro/coordinates/project)
 
-## Related standards
-
-[Targeted CSTA standards](/courses/csintro/coordinates/standards)
+## Estándares relacionados
+[Estándares de CSTA dirigidos](/courses/csintro/coordinates/standards)
