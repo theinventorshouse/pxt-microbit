@@ -1,34 +1,33 @@
-# Iteration & Looping
+# Iteración & bucle
 
-![Guitar Picture](/static/courses/csintro/iteration/guitar.jpg)
+![imagen de guitarra](/static/courses/csintro/iteration/guitar.jpg)
 
-This lesson introduces the concept of looping and iteration. Presents the 'While' block as a combination of an iteration and a conditional statement.
+Esta lección presenta el concepto de bucle e iteración. Presenta el bloque 'While' como una combinación de una iteración y una declaración condicional.
 
-## Lesson objectives
+## Objetivos de la lección 
 
-Students will...
-* Understand the value of iteration in programming
-* Understand looping as a form of iteration
-* Learn how and when to use the Looping blocks ‘repeat’, ‘while’, and ‘for’
-* Apply the above knowledge and skills to create a unique program that uses iteration and looping as an integral part of the program
+Los estudiantes serán capaces...
+* Comprender el valor de la iteración en la programación
+* Comprender el bucle como una forma de iteración
+* Aprender a cómo y cuándo usar los bloques de bucle 'repeat', 'while' y 'for'
+* Aplicar los conocimientos y habilidades anteriores para crear un programa único que utilice la iteración y el bucle como parte integral del programa.
 	
-## Lesson structure
+## Estructura de la lección
 
-* Introduction: Lather. Rinse. Repeat.
-* Unplugged Activity: Walk a Square pseudocode
-* micro:bit Activities: Code a sprite to walk a Square, travelling light, micro:bit alarm!
-* Project: Get Loopy!
-* Project Mods: Use servo motors to add a motion element to the project
-* Assessment: Rubric 
-* Standards: Listed
+* Introducción: enjabonar, enjuagar, repetir..
+* Actividad desconectada: Walk a Square pseudocode
+* Actividades de micro bit:Code a sprite to walk a Square, travelling light, micro:bit alarm!
+*Proyecto: Get Loopy!
+* Modificaciones de proyecto:use servomotores para agregar un elemento de movimiento al proyecto
+* Estándares: enumerados
 
 ## Lesson plan
 
-1. [**Overview**: Iteration and looping](/courses/csintro/iteration/overview)
-2. [**Unplugged**: Walk a square](/courses/csintro/iteration/unplugged)
-3. [**Activity**: Loops demos](/courses/csintro/iteration/activity)
-4. [**Project**: Get loopy](/courses/csintro/iteration/project)
+1. [**Descripción general**: Iteraciones y bucles](/courses/csintro/iteration/overview)
+2. [**Dsconectado**: recorre un cuadrado](/courses/csintro/iteration/unplugged)
+3. [**Actividad**: demostraciones de bucles](/courses/csintro/iteration/activity)
+4. [**Proyecto**: Get loopy](/courses/csintro/iteration/project)
 
-## Related standards
+## Estándares relacionados
 
-[Targeted CSTA standards](/courses/csintro/iteration/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/iteration/standards)
