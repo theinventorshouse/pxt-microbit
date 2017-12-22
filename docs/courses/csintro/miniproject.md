@@ -1,19 +1,18 @@
-# Mini-project
+# Mini proyecto
 
 ![Ideas](/static/courses/csintro/miniproject/problem-solving.png)
 
-In this unit, we will be reviewing the concepts we covered in the previous weeks, and providing some ideas for an independent “mini-project” students can focus on in the next several classes. We will also introduce a framework for keeping students accountable to the work they are doing individually and in groups, and providing a rubric for assessment of the development process, as well as the finished product.
+En esta unidad, revisaremos los conceptos que cubrimos en las semanas previas, y brindaremos algunas ideas para un "mini proyecto" independiente en el que los estudiantes pueden enfocarse en las próximas clases. También presentaremos un marco para mantener a los estudiantes responsables ante el trabajo que están haciendo individualmente y en grupos, y proporcionar una rúbrica para la evaluación del proceso de desarrollo, así como también del producto final.
 
-It is important to allow students to practice accounting for the work they are doing on a short “mini-project” like this, so that when they move on to an independent project spanning multiple weeks, it will be easier for you to keep track of what everybody is doing.
+Es importante permitir que los estudiantes practiquen la contabilidad del trabajo que están haciendo en un pequeño "mini-proyecto" como este, de modo que cuando pasen a un proyecto independiente que abarque varias semanas, será más fácil para usted realizar un seguimiento de lo que todos están haciendo
 
-It also reinforces the important idea that how you solve problems is at least as important to learning as whether you solved them at all (or even got the right answer). Programming is a process of patient problem-solving, and finding ways to value, acknowledge, and reward the problem-solving process is an important part of assessment.
+También refuerza la idea importante de que la forma en que resuelves los problemas es al menos tan importante para aprender como si los resolviste en absoluto (o incluso obtuviste la respuesta correcta). La programación es un proceso de resolución de problemas del paciente, y encontrar formas de valorar, reconocer y recompensar el proceso de resolución de problemas es una parte importante de la evaluación.
 
-## Lesson plan
+## Plan de estudios
 
-1. [**Review**: Looking back at what we've learned so far](/courses/csintro/miniproject/review)
-3. [**Activity**: Collaboratively independent](/courses/csintro/miniproject/activity)
-4. [**Project**: Mini-project](/courses/csintro/miniproject/project)
+1. [**Revisión**: Mirando hacia atrás a lo que hemos aprendido hasta ahora](/courses/csintro/miniproject/review)
+3. [**Actividad**: Colaborativamente independiente](/courses/csintro/miniproject/activity)
+4. [**Proyecto**: Mini-proyecto](/courses/csintro/miniproject/project)
 
-## Related standards
-
-[Targeted CSTA standards](/courses/csintro/miniproject/standards)
+## Estándares relacionados
+[Estándares de CSTA dirigidos](/courses/csintro/miniproject/standards)
