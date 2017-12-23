@@ -1,31 +1,33 @@
-# Radio and Communication
+# Radio y Communicación
 
-![Combo Box Example](/static/courses/csintro/radio/combo-box.png)
+![Caja](/static/courses/csintro/radio/combo-box.png)
 
-This lesson covers the use of more than one micro:bit to share and combine data. Students will explore a complex epidemiological program (Infection) that demonstrates the Radio functionality of the micro:bit. Students will send and receive numbers and strings in a series of guided activities. Finally, students are asked to collaborate so that they can share their micro:bits and create a project together.
+Esta lección cubre el uso de más de un micro: bit para compartir y combinar datos. Los estudiantes explorarán un complejo programa epidemiológico (Infección) que demuestra la funcionalidad de radio del micro: bit. Los estudiantes enviarán y recibirán números y cadenas en una serie de actividades guiadas. Finalmente, se les pide a los estudiantes que colaboren para que puedan compartir sus micro bits y crear un proyecto juntos.
 
-## Lesson objectives
 
-Students will...
-* Understand how to use the Radio blocks to send and receive data between micro:bits
-* Understand the specific types of data that can be sent over the Radio
 
-## Lesson structure
+## Objetivos de la lección
 
-* Introduction: Radio & communication
-* Unplugged Activity: Infection simulation
-* micro:bit Activity: Marco Polo & Morse Code
-* Project: Radio
-* Assessment: Rubric 
-* Standards: Listed
+Los estudiantes serán capaces de...
+* Entender cómo usar los bloques de radio para enviar y recibir datos entre micro: bits
+* Comprender los tipos específicos de datos que pueden enviarse a través de la Radio
 
-## Lesson plan
+## Estructura de la lección
 
-1. [**Overview**: Radio and communications](/courses/csintro/radio/overview)
-2. [**Unplugged**: Infection simulation](/courses/csintro/radio/unplugged)
+* Introducción: Radio y comunicación
+* Actividad desenchufada: simulación de infección
+* micro: bit Actividad: Marco Polo y código Morse
+* Proyecto: Radio
+* Evaluación: Rúbrica 
+* Estándares: enumerados
+
+## Plan de estudios 
+
+1. [**Descripción general**: Radio y comunicaciones](/courses/csintro/radio/overview)
+2. [**Desconectado**: simulación de infección](/courses/csintro/radio/unplugged)
 3. [**Activity**: Marco Polo and Morse code](/courses/csintro/radio/activity)
-4. [**Project**: Radio project](/courses/csintro/radio/project)
+4. [**Proyecto**:  proyecto de radio](/courses/csintro/radio/project)
 
-## Related standards
+## Estándares relacionados
 
-[Targeted CSTA standards](/courses/csintro/radio/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/radio/standards)
