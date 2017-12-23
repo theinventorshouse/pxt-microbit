@@ -1,32 +1,32 @@
-# Binary
+# Binario
+![Numeros binarios en el monitor](/static/courses/csintro/binary/binary-crt.png)
 
-![Binary numbers shown on a monitor](/static/courses/csintro/binary/binary-crt.png)
+Esta lección presenta el concepto de dígitos binarios y notación de base 2. Los estudiantes aprenderán cómo se almacenan los datos digitalmente y cómo se puede leer y acceder.
 
-This lesson presents the concept of binary digits and base-2 notation.  Students will learn how data is stored digitally and how it can be read and accessed.
+## Objetivos de la lección
 
-## Lesson objectives
+Los estudiantes seran capaces de...
+* Comprender qué bits y qué son y cómo se relacionan con las computadoras y la forma en que se procesa y almacena la información.
+* Aprender a contar en Base-2 (binario) y traduzca los números de Base-10 (decimal) a binario y decimal.
+*Aplicar los conocimientos y habilidades anteriores para crear un programa único que utilice el conteo binario como parte integral del programa.
 
-Students will...
-* Understand what bits and bytes are and how they relate to computers and the way information is processed and stored.
-* Learn to count in Base-2 (binary) and translate numbers from Base-10 (decimal) to binary and decimal.
-* Apply the above knowledge and skills to create a unique program that uses binary counting as an integral part of the program.
+## structura de la lección
 
-## Lesson structure
+* Introducción: Bits y Bytes
+* Actividad Desconectada: Máquina Expendedora Binaria
+* micro: bit Actividad: Transmogrificador binario
+* Proyecto: hacer una caja registradora binaria
+* Evaluación: Rúbrica
+* Estándares: enumerados
 
-* Introduction: Bits and Bytes
-* Unplugged Activity: Binary Vending Machine
-* micro:bit Activity: Binary Transmogrifier
-* Project: Make a Binary Cash Register
-* Assessment: Rubric 
-* Standards: Listed
+## Plan de estudios
 
-## Lesson plan
+1. [**Descripción genera**: Bits, bytes, binarios](/courses/csintro/binary/overview)
+2. [**Desconectado*: máquina expendedora binaria](/courses/csintro/binary/unplugged)
+3. [**Actividad**: transmogrificador binario](/courses/csintro/binary/activity)
+4. [**Proyecto**: hacer binario una caja registradora
+(/courses/csintro/binary/project)
 
-1. [**Overview**: Bits, bytes, binary](/courses/csintro/binary/overview)
-2. [**Unplugged**: Binary vending machine](/courses/csintro/binary/unplugged)
-3. [**Activity**: Binary transmogrifier](/courses/csintro/binary/activity)
-4. [**Project**: Make binary a cash register](/courses/csintro/binary/project)
+## Estándares relacionados
 
-## Related standards
-
-[Targeted CSTA standards](/courses/csintro/binary/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/binary/standards)
