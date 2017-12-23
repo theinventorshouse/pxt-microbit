@@ -1,31 +1,31 @@
-# Booleans
+# Booleanos
 
-![micro:bit Combo Box](/static/courses/csintro/booleans/cover.jpeg)
+![micro:bit Combo caja](/static/courses/csintro/booleans/cover.jpeg)
 
-This lesson introduces the use of the boolean data type to control the flow of a program, keep track of state, and to include or exclude certain conditions.
+Esta lección presenta el uso del tipo de datos booleanos para controlar el flujo de un programa, realizar un seguimiento del estado e incluir o excluir ciertas condiciones..
 
-## Lesson objectives 
-Students will...
-* Understand what booleans and boolean operators are, and why and when to use them in a program.
-* Learn how to create a boolean, set the boolean to an initial value, and change the value of the boolean within a micro:bit program.
-* Learn how to use the random true or false block. 
-* Apply the above knowledge and skills to create a unique program that uses booleans and boolean operators as an integral part of the program.
+## Objetivos de la lección
+Los estudiantes serán capaces de...
+* Comprender qué son booleanos y operadores booleanos, y por qué y cuándo usarlos en un programa.
+* Aprender a crear un booleano, establezca el valor booleano a un valor inicial y cambie el valor del booleano dentro de un programa micro: bit.
+* Aprender a usar el bloque aleatorio verdadero o falso.. 
+* Aplicar los conocimientos y habilidades anteriores para crear un programa único que use booleanos y operadores booleanos como parte integral del programa.
  
-## Lesson structure
-* Introduction: Booleans in daily life
-* Unplugged Activity: Two Heads are Better Than One
-* micro:bit Activity: Double Coin Flipper
-* Project: Boolean
-* Assessment: Rubric
-* Standards: Listed
+## Estructura de la lección
+* Introducción: Booleanos en la vida cotidiana.
+* Actividad desenchufada: dos cabezas son mejores que una
+* micro: bit Actividad: Doble Moneda
+* Proyecto: Booleno
+* Evaluación: Rúbrica
+* Estándares: enumerados
 
-## Lesson plan
+## Estándares relacionados
 
-1. [**Overview**: Booleans](/courses/csintro/booleans/overview)
-2. [**Unplugged**: Two heads are better than one](/courses/csintro/booleans/unplugged)
-3. [**Activity**: Double coin flipper](/courses/csintro/booleans/activity)
-4. [**Project**: Boolean](/courses/csintro/booleans/project)
+1. [**Descripción**: Booleano](/courses/csintro/booleans/overview)
+2. [**Desenchufado**: dos cabezas son mejores que una](/courses/csintro/booleans/unplugged)
+3. [**Actividad**: Aleta de doble moneda](/courses/csintro/booleans/activity)
+4. [**Proyecto**: Booleano](/courses/csintro/booleans/project)
 
 ## Related standards
 
-[Targeted CSTA standards](/courses/csintro/booleans/standards)
+[Estándares de CSTA dirigidos](/courses/csintro/booleans/standards)
