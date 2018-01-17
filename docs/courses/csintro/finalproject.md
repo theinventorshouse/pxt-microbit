@@ -2,15 +2,17 @@
 
 ![micro:bit holder square](/static/courses/csintro/conditionals/microbit-holder.jpg)
 
-In this unit, we will be reviewing the concepts we covered in the previous weeks, and providing some ideas for an independent final project that students can focus on in the next several weeks. We will also provide a rubric for keeping students on task and tracking the learning that they are doing as they work on their projects. This is an expanded version of the process students followed in the [Mini-Project](/courses/csintro/miniproject), in Lesson 6. 
+En esta unidad, revisaremos los conceptos que cubrimos en las semanas previas y brindaremos algunas ideas para un proyecto final independiente en el que los estudiantes puedan enfocarse en las próximas semanas. También proporcionaremos una rúbrica para mantener a los estudiantes enfocados en la tarea y seguir el aprendizaje que están haciendo mientras trabajan en sus proyectos. Esta es una versión ampliada del proceso que los estudiantes siguieron en el Mini-Proyecto , en la Lección 6.
 
-Students are asked to create an independent project that demonstrates the use of something they have already learned, something they went out and researched for themselves, something they borrowed from somewhere else (with citations) and something completely original. They are also asked to document their learning process throughout the next couple of weeks using an independent project framework that emphasizes metacognitive development and process-oriented work.
+Se les pide a los estudiantes que creen un proyecto independiente que demuestre el uso de algo que ya aprendieron, algo que hayan salido e investigado por sí mismos, algo que pidieron prestado de otra parte (con citas) y algo completamente original. También se les pide que documenten su proceso de aprendizaje a lo largo de las próximas semanas utilizando un marco de proyecto independiente que enfatiza el desarrollo metacognitivo y el trabajo orientado al proceso.
 
-## Lesson plan
 
-1. [**Review**: Review of lessons 7 - 11](/courses/csintro/finalproject/review)
-3. [**Final project**: Project goals and guidelines](/courses/csintro/finalproject/project)
-4. [**Examples**: Final project examples](/courses/csintro/finalproject/examples)
+
+## Plan de estudios
+
+1. [**Revisión**:  Revisión de las lecciones 7 a 11](/courses/csintro/finalproject/review)
+3. [**Proyecto final**: objetivos y directrices del proyecto](/courses/csintro/finalproject/project)
+4. [**ejemplos**: ejemplos de proyectos finales](/courses/csintro/finalproject/examples)
 
 ## Related standards
 
